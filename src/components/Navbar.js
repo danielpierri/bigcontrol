@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import logo from "../img/big-control-logo.png"
+import logo from "../img/big-control-home.png"
 
 export default function Navbar() {
   const [menu, setMenu] = useState(false)

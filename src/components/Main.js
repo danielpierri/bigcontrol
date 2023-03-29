@@ -7,9 +7,9 @@ export default function Main() {
       <div className="hero__content">
           <h1 className="hero__title">BIG CONTROL</h1>
           <p className="hero__description">
-            Segurança Eletrônica,
+            Segurança Perimetral,
             <br/>
-            Perimetral e Controle de Acesso
+            CFTV e Controle de Acesso
           </p>
         </div>
         <div className="hero-cta__container">

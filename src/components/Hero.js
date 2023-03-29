@@ -11,7 +11,6 @@ export default function Hero() {
           <Navbar />
           <Main />
         </div>
-
       </div>
     </>
   )

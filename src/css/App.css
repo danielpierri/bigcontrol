@@ -38,7 +38,11 @@ body {
 }
 
 .hero__title {
-  color: #D6B34B;
+  /* color: #D6B34B; */
+  background: -webkit-linear-gradient(#F4DE86, #776431);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 6rem;
   font-weight: 900;
   letter-spacing: .25rem;
@@ -70,7 +74,7 @@ body {
   display: inline-block;
   font-family: 'Nunito', sans-serif;
   font-weight: 900;
-  background-color: #D6B34B;
+  background-color: #FFD36D;
   border: none;
   border-radius: 1em;
   font-size: 2.5rem;
@@ -83,7 +87,7 @@ body {
 }
 
 .hero-cta:hover {
-  background-color: #ffd36d;
+  background-color: #F4DE86;
   box-shadow: 0 0 10px #D6B34B;
 }
 
@@ -116,7 +120,7 @@ body {
   color: #FFF;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 55em) {
   .hero {
     max-width: 1400px;
     margin: 0 auto;
@@ -223,17 +227,17 @@ body {
   }
 }
 
-@media (max-width: 50em) {
+@media (max-width: 55em) {
   .nav {
     position: relative;
     display: flex;
     flex-direction: column;
     align-content: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .nav > div {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
@@ -241,7 +245,7 @@ body {
   }
   
   .nav img {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     max-width: 80px;
     z-index: 2;
   }
@@ -256,7 +260,7 @@ body {
   } */
 
   .nav__wrapper {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 100%;
     position: fixed;
     text-align: center;
@@ -312,7 +316,7 @@ body {
   }
 
   .hero__bg {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-position: 80%;
   }
 
@@ -326,8 +330,9 @@ body {
   }
 
   .hero__content {
+    /* border: 1px solid red; */
     flex-direction: column;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 12em 3em 16em; 
   }
 
