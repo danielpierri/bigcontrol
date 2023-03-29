@@ -1,3 +1,4 @@
+import React from "react"
 import Navbar from "./Navbar.js"
 import Main from "./Main.js"
 import "../css/App.css"
