@@ -1,4 +1,5 @@
 import React from "react"
+import wpplogo from "../img/whatsapp-128.png"
 
 export default function Main() {
   return (
@@ -15,6 +16,11 @@ export default function Main() {
         <div className="hero-cta__container">
           <p className="hero-cta__text">Confira nossos serviços</p>
           <a href="index.html" className="hero-cta">Conhecer</a>
+        </div>
+
+        <div className="hero-contact__container">
+          <img src={wpplogo} alt="WhatsApp logo" />
+          <p>(21)99999-9999</p>
         </div>
       </main>
     </>
