@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/bigcontrol/static/css/main.2608b35e.css",
-    "main.js": "/bigcontrol/static/js/main.782f46c8.js",
+    "main.css": "/bigcontrol/static/css/main.91b94986.css",
+    "main.js": "/bigcontrol/static/js/main.43101508.js",
     "static/media/hero-background.png": "/bigcontrol/static/media/hero-background.50f063b93bdfd7c08ae1.png",
     "static/media/cftv.jpeg": "/bigcontrol/static/media/cftv.3a309f56ca2e7e08808a.jpeg",
     "static/media/cerca-eletrica.jpeg": "/bigcontrol/static/media/cerca-eletrica.9f1aaf0a3f0a32821a82.jpeg",
     "static/media/controle-de-acesso.jpg": "/bigcontrol/static/media/controle-de-acesso.6178db6325b90dc8b71b.jpg",
     "static/media/big-control-home.png": "/bigcontrol/static/media/big-control-home.02134c785b8edac50234.png",
     "index.html": "/bigcontrol/index.html",
-    "main.2608b35e.css.map": "/bigcontrol/static/css/main.2608b35e.css.map",
-    "main.782f46c8.js.map": "/bigcontrol/static/js/main.782f46c8.js.map"
+    "main.91b94986.css.map": "/bigcontrol/static/css/main.91b94986.css.map",
+    "main.43101508.js.map": "/bigcontrol/static/js/main.43101508.js.map"
   },
   "entrypoints": [
-    "static/css/main.2608b35e.css",
-    "static/js/main.782f46c8.js"
+    "static/css/main.91b94986.css",
+    "static/js/main.43101508.js"
   ]
 }
