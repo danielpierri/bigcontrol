@@ -25,7 +25,7 @@ export default function Navbar() {
           <ul className="nav__list">
             <li><a className="nav__link active"href="index.html">HOME</a></li>
             <li><a className="nav__link" href="index.html">SERVIÇOS</a></li>
-            <li><a className="nav__link" href="index.html">QUEM SOMOS</a></li>
+            <li><a className="nav__link" href="index.html">PROJETOS</a></li>
             <li><a className="nav__link" href="index.html">CONTATO</a></li>
           </ul>
         </div>
