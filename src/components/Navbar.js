@@ -7,7 +7,6 @@ export default function Navbar() {
   const menuAction = (e) => {
     e.preventDefault()
     setMenu(prevMenu => !prevMenu)
-    console.log("The button was clicked.")
   }
 
   return (
@@ -18,8 +17,8 @@ export default function Navbar() {
           {/* <label className="menu-hamburger hidden">
             <input type="checkbox"/>
           </label> */}
-          <div className="menu-hamburger-btn">
-            <button id="menu-btn" onClick={menuAction}>x</button>
+          <div className="menu-wrapper__btn" onClick={menuAction}>
+            <button id="menu-btn" className={menu ? "menu__btn--active" : "menu__btn"}></button>
           </div>
         </div>
         <div id="nav-wrapper" className={menu ? "nav__wrapper--isDisplayed" : "nav__wrapper"}>
