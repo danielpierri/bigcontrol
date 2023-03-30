@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bigcontrol/static/css/main.91b94986.css",
-    "main.js": "/bigcontrol/static/js/main.43101508.js",
+    "main.js": "/bigcontrol/static/js/main.290fa928.js",
     "static/media/hero-background.png": "/bigcontrol/static/media/hero-background.50f063b93bdfd7c08ae1.png",
     "static/media/cftv.jpeg": "/bigcontrol/static/media/cftv.3a309f56ca2e7e08808a.jpeg",
     "static/media/cerca-eletrica.jpeg": "/bigcontrol/static/media/cerca-eletrica.9f1aaf0a3f0a32821a82.jpeg",
@@ -9,10 +9,10 @@
     "static/media/big-control-home.png": "/bigcontrol/static/media/big-control-home.02134c785b8edac50234.png",
     "index.html": "/bigcontrol/index.html",
     "main.91b94986.css.map": "/bigcontrol/static/css/main.91b94986.css.map",
-    "main.43101508.js.map": "/bigcontrol/static/js/main.43101508.js.map"
+    "main.290fa928.js.map": "/bigcontrol/static/js/main.290fa928.js.map"
   },
   "entrypoints": [
     "static/css/main.91b94986.css",
-    "static/js/main.43101508.js"
+    "static/js/main.290fa928.js"
   ]
 }
