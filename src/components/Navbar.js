@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { NavLink } from "react-router-dom"
 import logo from "../img/big-control-home.png"
 
 export default function Navbar() {
@@ -23,10 +24,26 @@ export default function Navbar() {
         </div>
         <div id="nav-wrapper" className={menu ? "nav__wrapper--isDisplayed" : "nav__wrapper"}>
           <ul className="nav__list">
-            <li><a className="nav__link active"href="index.html">HOME</a></li>
-            <li><a className="nav__link" href="index.html">SERVIÇOS</a></li>
-            <li><a className="nav__link" href="index.html">PROJETOS</a></li>
-            <li><a className="nav__link" href="index.html">CONTATO</a></li>
+            <li>
+              <NavLink to="/bigcontrol" className={({ isActive, isPending }) => isPending ? "nav__link pending" : isActive ? "nav__link active" : "nav__link"}>
+                <a href={() => false}>HOME</a>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/services" className={({ isActive, isPending }) => isPending ? "nav__link pending" : isActive ? "nav__link active" : "nav__link"}>
+                <a href={() => false}>SERVIÇOS</a>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/projects" className={({ isActive, isPending }) => isPending ? "nav__link pending" : isActive ? "nav__link active" : "nav__link"}>
+                <a href={() => false}>PROJETOS</a>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact" className={({ isActive, isPending }) => isPending ? "nav__link pending" : isActive ? "nav__link active" : "nav__link"}>
+                <a href={() => false}>CONTATO</a>
+              </NavLink>
+            </li>
           </ul>
         </div>
       </nav>

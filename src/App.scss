@@ -1,0 +1,62 @@
+@import "./scss/partials/navbar";
+@import "./scss/partials/hero";
+@import "./scss/partials/main";
+@import "./scss/partials/services";
+@import "./scss/partials/footer";
+@import "./scss/variables/colors";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: $color-bg;
+}
+.scroll {
+  width: 30%;
+  height: 100px;
+  border: 1px solid grey;
+  overflow: scroll;
+  display: inline-block;
+}
+.scroll-width-auto {
+  scrollbar-width: auto;
+}
+.scroll-width-thin {
+  scrollbar-width: thin;
+}
+.scroll-width-none {
+  scrollbar-width: none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F4DE86;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FFD36D;
+}
+
+@media (min-width: 55em) {}
+
+@media (max-width: 55em) {}

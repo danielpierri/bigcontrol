@@ -1,14 +1,20 @@
 import React from "react"
-import Hero from "./components/Hero.js"
-import Services from "./components/Services.js"
-import Footer from "./components/Footer.js"
+import { Routes, Route } from "react-router-dom"
+import Home from "./pages/Home.js"
+import Services from "./pages/Services.js"
+import Projects from "./pages/Projects.js"
+import Contact from "./pages/Contact.js"
 
 function App() {
   return (
-    <div>
-      <Hero />
-      <Services />
-      <Footer />
+    <div className="App">
+      <Routes>
+        {/* /bigcontrol because of GitHub Pages */}
+        <Route path="/bigcontrol" element={ <Home />} />
+        <Route path="/services" element={ <Services />} />
+        <Route path="/projects" element={ <Projects />} />
+        <Route path="/contact" element={ <Contact />} />
+      </Routes>
     </div>
   )
 }

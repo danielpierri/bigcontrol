@@ -1,19 +1,21 @@
-.services__container {
+.main__container {
   background-color: #000;
+  max-width: 2100px;
+  margin: 0 auto;
 }
 
-.services__section {
+.main__section {
   background-color: #000;
   display: flex;
 }
 
-.services {
+.main {
   display: flex;
   background-color: #DDD;
   text-align: left;
 }
 
-.services-info__container {
+.main-info__container {
   display: flex;
   background-color: #222;/*  NIGHT MODE */
   /* background-color: #CCC; */
@@ -21,15 +23,16 @@
   /* color: #000; */
 }
 
-.services__img__container {
-  background-color: #111;
+.main__img__container {
+  background-color: #222;
+  /* border: 50px solid #222; */
 }
 
-.services__img {
+.main__img {
   object-fit: contain;
 }
 
-.services__title {
+.main__title {
   /* border: 1px solid red; */
   max-width: fit-content;
   color: #FFD36D; /* NIGHT MODE */
@@ -40,7 +43,7 @@
   letter-spacing: 1.8px;
 }
 
-.services__text {
+.main__text {
   /* border: 1px solid red; */
   font-family: "Nunito", sans-serif;
   font-weight: 300;
@@ -48,91 +51,92 @@
   letter-spacing: 1.2px;
 }
 
-.services__btn {
+.main__btn {
   align-self: end;
   border-radius: 3px;
   text-decoration: none;
   background-color: #F4DE86; /* NIGHT MODE */
   color: #000;
   font-family: "Josefin Sans", sans-serif;
-  padding: .25em .5em;
+  padding: .5em .75em;
   transition: background .2s, transform .1s;
 }
 
-.services__btn:hover,
-.services__btn:focus {
+.main__btn:hover,
+.main__btn:focus {
   background-color: #FFF; /* NIGHT MODE */
   color: #000;
   transform: scale(1.01);
 }
 
-.services__btn:active {
+.main__btn:active {
   background-color: #BBB; /* NIGHT MODE */
   transform: scale(1);
 }
 
 @media (min-width: 55em) {
-  .services__container {
+  .main__container {
   }
 
-  .services__section {
+  .main__section {
     flex-direction: column;
   }
 
-  .services {
+  .main {
     flex-direction: row;
     
   }
 
-  .service-2 > .services__img__container {
+  .service-2 > .main__img__container {
     order: 2;
   }
 
-  .service-2 > .services-info__container {
+  .service-2 > .main-info__container {
     order: 1;
   }
 
-  .services-info__container {
+  .main-info__container {
     /* border: 1px solid deeppink; */
     flex-direction: column;
     min-width: 50%;
     padding: 5.5em;
   }
 
-  .services__img__container {
+  .main__img__container {
     display: flex;
-
     min-width: 50%;
   }
 
-  .services__img {
+  .main__img {
+    border: 40px solid #222;
+    border-radius: 45px;
     background-size: cover;
     object-fit: cover;
     min-width: 100%;
   }
 
-  .services__title {
+  .main__title {
     font-size: 4.25rem;
     margin-bottom: 1em;
   }
 
-  .services__text {
+  .main__text {
     font-size: 2.5rem;
     margin-bottom: 2.75em;
   }
 
-  .services__btn {
+  .main__btn {
     font-size: 2.5rem;
     margin-right: 2.5em;
   }
 }
 
 @media (max-width: 55em) {
-  .services__container {
+  .main__container {
     background: linear-gradient(#000, #222)
   }
 
-  .services__section {
+  .main__section {
     flex-direction: column;
     align-items: space-between;
     max-width: 100%;
@@ -140,47 +144,49 @@
     margin-left: auto;
   }
 
-  .services {
+  .main {
     flex-direction: column;
     margin: 0;
     padding: 0;
   }
 
-  .service-2 > .services__img__container {
+  .service-2 > .main__img__container {
     order: 1;
   }
 
-  .service-2 > .services-info__container {
+  .service-2 > .main-info__container {
     order: 2;
   }
 
-  .services-info__container {
+  .main-info__container {
     /* border: 1px solid red; */
     flex-direction: column;
     margin: 0;
     padding: 1.25em;
   }
 
-  .services__img__container {
+  .main__img__container {
     /* border: 1px solid red; */
     margin: 0;
     padding: 0;
     min-width: 100%;
   }
 
-  .services__img {
+  .main__img {
+    border: 10px solid #222;
+    border-radius: 15px;
     height: 100%;
     width: 100%;
   }
 
-  .services__title {
+  .main__title {
     align-self: center;
     font-size: 2rem;
     letter-spacing: 2px;
     margin-block: .5em;
   }
 
-  .services__text {
+  .main__text {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.4;
@@ -188,7 +194,7 @@
     margin-bottom: 1.25em;
   }
 
-  .services__btn {
+  .main__btn {
     align-self: end;
     font-size: 1.5rem;
     margin-bottom: 1.5em;
@@ -197,7 +203,7 @@
 }
 
 @media (max-width: 1450px) {
-  .services__img {
+  .main__img {
 
   }
 }

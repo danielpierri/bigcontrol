@@ -1,0 +1,33 @@
+.services__container {
+  border: 1px solid red;
+  color: #FFF;
+}
+
+.services {
+  border: 1px solid yellowgreen;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service {
+  margin-bottom: 5rem;
+}
+
+.services__title {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4.25rem;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.services__text {
+  font-family: "Nunito", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 1.3px;
+}
