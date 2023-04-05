@@ -1,5 +1,5 @@
 import React from "react"
-import Navbar from "./Navbar.js"
+import Navbar from "./Navbar"
 import "../App.css"
 import wpplogo from "../img/whatsapp-128.png"
 

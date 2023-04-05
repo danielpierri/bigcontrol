@@ -1,9 +1,9 @@
 import React from "react"
 import { Routes, Route } from "react-router-dom"
-import Home from "./pages/Home.js"
-import Services from "./pages/Services.js"
-import Projects from "./pages/Projects.js"
-import Contact from "./pages/Contact.js"
+import Home from "./pages/Home"
+import Services from "./pages/Services"
+import Projects from "./pages/Projects"
+import Contact from "./pages/Contact"
 
 function App() {
   return (
