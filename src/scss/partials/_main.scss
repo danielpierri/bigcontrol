@@ -1,30 +1,33 @@
+@import "../variables/colors";
+@import "../variables/fonts";
+
 .main__container {
-  background-color: #000;
+  background-color: $color-black;
   max-width: 2100px;
   margin: 0 auto;
 }
 
 .main__section {
-  background-color: #000;
+  background-color: $color-black;
   display: flex;
 }
 
 .main {
   display: flex;
-  background-color: #DDD;
+  background-color: $color-bg;
   text-align: left;
 }
 
 .main-info__container {
   display: flex;
-  background-color: #222;/*  NIGHT MODE */
+  background-color: $color-bg;/*  NIGHT MODE */
   /* background-color: #CCC; */
   color: #CCC; /* NIGHT MODE */
   /* color: #000; */
 }
 
 .main__img__container {
-  background-color: #222;
+  background-color: $color-bg;
   /* border: 50px solid #222; */
 }
 
@@ -35,7 +38,7 @@
 .main__title {
   /* border: 1px solid red; */
   max-width: fit-content;
-  color: #FFD36D; /* NIGHT MODE */
+  color: $color-light; /* NIGHT MODE */
   /* text-shadow: 0 0 2px #222; */
   /* text-shadow: 0 0 2px #FFD36D; */
   font-family: "Josefin Sans", sans-serif;
@@ -55,8 +58,8 @@
   align-self: end;
   border-radius: 3px;
   text-decoration: none;
-  background-color: #F4DE86; /* NIGHT MODE */
-  color: #000;
+  background-color: $color-light; /* NIGHT MODE */
+  color: $color-black;
   font-family: "Josefin Sans", sans-serif;
   padding: .5em .75em;
   transition: background .2s, transform .1s;
@@ -64,14 +67,13 @@
 
 .main__btn:hover,
 .main__btn:focus {
-  background-color: #FFF; /* NIGHT MODE */
-  color: #000;
-  transform: scale(1.01);
+  background-color: $color-white; /* NIGHT MODE */
+  color: $color-black;
 }
 
 .main__btn:active {
   background-color: #BBB; /* NIGHT MODE */
-  transform: scale(1);
+  transform: scale(.99);
 }
 
 @media (min-width: 55em) {
@@ -108,7 +110,7 @@
   }
 
   .main__img {
-    border: 40px solid #222;
+    border: 40px solid $color-bg;
     border-radius: 45px;
     background-size: cover;
     object-fit: cover;
@@ -133,7 +135,7 @@
 
 @media (max-width: 55em) {
   .main__container {
-    background: linear-gradient(#000, #222)
+    background: linear-gradient($color-black, $color-bg)
   }
 
   .main__section {
@@ -173,7 +175,7 @@
   }
 
   .main__img {
-    border: 10px solid #222;
+    border: 10px solid $color-bg;
     border-radius: 15px;
     height: 100%;
     width: 100%;

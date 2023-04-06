@@ -1,7 +1,7 @@
 import React from "react"
-import cercaEletrica from "../img/cerca-eletrica.jpeg"
-import cftv from "../img/cftv.jpeg"
-import controleDeAcesso from "../img/controle-de-acesso.jpg"
+import cercaEletricaHome from "../img/cerca-eletrica-home.jpeg"
+import cftvHome from "../img/cftv-home.jpeg"
+import controleDeAcessoHome from "../img/controle-de-acesso-home.jpg"
 
 export default function Main() {
   return (
@@ -11,7 +11,7 @@ export default function Main() {
         <div className="main service-1">
 
           <div className="main__img__container">
-            <img src={cftv} alt="circuito fechado de televisão" className="main__img" />
+            <img src={cftvHome} alt="circuito fechado de televisão" className="main__img" />
           </div>
 
           <div className="main-info__container">
@@ -25,7 +25,7 @@ export default function Main() {
         <div className="main service-2">
 
           <div className="main__img__container">
-            <img src={cercaEletrica} alt="cerca elétrica" className="main__img" />
+            <img src={cercaEletricaHome} alt="cerca elétrica" className="main__img" />
           </div>
 
           <div className="main-info__container">
@@ -39,7 +39,7 @@ export default function Main() {
         <div className="main service-3">
 
           <div className="main__img__container">
-            <img src={controleDeAcesso} alt="controle de acesso" className="main__img" />
+            <img src={controleDeAcessoHome} alt="controle de acesso" className="main__img" />
           </div>
 
           <div className="main-info__container">

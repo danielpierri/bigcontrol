@@ -1,3 +1,6 @@
+@import "../variables/colors";
+@import "../variables/fonts";
+
 /* === HERO === */
 
 .hero__bg {
@@ -72,7 +75,7 @@
   display: inline-block;
   font-family: 'Nunito', sans-serif;
   font-weight: 900;
-  background-color: #FFD36D;
+  background-color: $color-light;
   border: none;
   border-radius: 1em;
   font-size: 2.5rem;
@@ -81,11 +84,11 @@
   cursor: pointer;
   text-decoration: none;
   color: #000;
-  transition: .1s;
+  transition: .2s;
 }
 
 .hero-cta:hover {
-  background-color: #F4DE86;
+  background-color: $color-accent;
   box-shadow: 0 0 10px #D6B34B;
 }
 
@@ -102,7 +105,7 @@
   position: fixed;
   text-align: end;
   right: 0;
-  bottom: 10px;
+  bottom: 20px;
   z-index: 1;
 }
 

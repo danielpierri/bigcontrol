@@ -1,3 +1,6 @@
+@import "../variables/colors";
+@import "../variables/fonts";
+
 .footer__container {
   /* border: 1px solid red; */
   background-color: #111;
@@ -59,12 +62,12 @@
 }
 
 .footer__contact li i {
-  color: #F4DE86;
+  color: $color-light;
 }
 
 .footer__social-media li {
   cursor: pointer;
-  color: #F4DE86;
+  color: $color-light;
   margin-right: 1.5rem;
   transition: color .2s;
 }
@@ -79,7 +82,7 @@
 
 .footer__copyright p {
   /* border: 1px solid red; */
-  background-color: #F4DE86;
+  background-color: $color-light;
   color: #000;
   text-align: center;
 }

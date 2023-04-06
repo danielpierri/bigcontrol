@@ -1,6 +1,6 @@
 import React from "react"
 import Navbar from "./Navbar"
-import "../App.css"
+import "../App.scss"
 import wpplogo from "../img/whatsapp-128.png"
 
 export default function Hero() {

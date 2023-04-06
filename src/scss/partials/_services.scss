@@ -1,6 +1,9 @@
+@import "../variables/colors";
+@import "../variables/fonts";
+
 .services__container {
   border: 1px solid red;
-  color: #FFF;
+  color: $color-white;
 }
 
 .services {

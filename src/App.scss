@@ -49,12 +49,12 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #F4DE86;
+  background: $color-light;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #FFD36D;
+  background: $color-accent;
 }
 
 @media (min-width: 55em) {}
