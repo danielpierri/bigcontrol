@@ -69,7 +69,7 @@ export default function Hero() {
             <div className="hero__cta__wrapper">
               <div className="hero__cta__container">
                 <p className="hero__cta__title">
-                  Projetos, Execução e Manutenção
+                  Projetos,<br /> Execução e Manutenção
                 </p>
                 {/* <p className="hero__cta__text">Confira nossos serviços</p> */}
                 <a href="index.html" className="hero__cta">Conhecer mais</a>

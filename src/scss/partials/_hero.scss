@@ -11,21 +11,23 @@
     min-height: 100vh;
     position: relative;
     box-shadow: 0px 3px 15px #111;
-    border: 1px solid rosybrown;
+    // border: 1px solid rosybrown;
   }
 
   &__main {
-    border: 1px solid powderblue;
+    // border: 1px solid powderblue;
     display: flex;
   }
   
   &__content {
+    // border: 1px solid red;
     color: #EEE;
     display: flex;
-    border: 1px solid green;
+    // border: 1px solid green;
   }
   
   &__title {
+    // border: 1px solid red;
     /* color: #D6B34B; */
     background: -webkit-linear-gradient(#F4DE86, #776431);
     background-clip: text;
@@ -37,6 +39,7 @@
   }
   
   &__description {
+    // border: 1px solid red;
     font-size: 3rem;
     letter-spacing: .45rem;
     line-height: 1.5;
@@ -47,18 +50,11 @@
     display: flex;
     align-self: center;
     color: #FFF;
-    margin-top: 20rem;
-    width: 40rem;
-    height: 10rem;
   }
   
   &__question {
-    border: 1px solid yellowgreen;
+    // border: 1px solid yellowgreen;
     text-align: center;
-    font-size: 2.75rem;
-    letter-spacing: .35rem;
-    line-height: 1.3;
-    font-weight: 300;
     animation-name: changing-text;
     animation-duration: 2s;
     animation-timing-function: ease-in;
@@ -76,7 +72,7 @@
   }
 
   &__contact__container {
-    border: 1px solid red;
+    // border: 1px solid red;
     /* display: flex;
     flex-direction: column;
     align-items: end;
@@ -89,7 +85,7 @@
   }
   
   &__contact__container img {
-    border: 1px solid red;
+    // border: 1px solid red;
     background-color: #000;
     border-radius: 10px 0 0 10px;
     padding: .5em;
@@ -98,7 +94,7 @@
   }
   
   &__contact__container p {
-    border: 1px solid red;
+    // border: 1px solid red;
     color: #FFF;
     background-color: #000;
     border-radius: 10px 0 0 10px;
@@ -134,34 +130,34 @@
     }
 
     &__wrapper {
-      border: 1px solid yellowgreen;
+      // border: 1px solid yellowgreen;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding-top: 12.5em;
       margin-bottom: 1em;
       max-width: fit-content;
     }
     
     &__container {
-      border: 1px solid yellowgreen;
+      // border: 1px solid yellowgreen;
       text-align: center;
       align-self: center;
       margin-bottom: 3em;
     }
 
     &__title {
-      border: 1px solid yellowgreen;
+      // border: 1px solid yellowgreen;
       color: #EEE;
       margin-bottom: .75em;
       font-size: 2.5rem;
-      font-weight: 700;
+      font-weight: 500;
       letter-spacing: .35rem;
+      line-height: 1.4;
     }
 
     &__text {
-      border: 1px solid yellowgreen;
+      // border: 1px solid yellowgreen;
       color: #EEE;
       margin-bottom: .75em;
       font-size: 2rem;
@@ -183,13 +179,13 @@
   z-index: 1;
 } */
 
-/* DESKTOP */
+/* === DESKTOP === */
 @media (min-width: 55em) {
   .hero {
     max-width: 1800px;
     margin: 0 auto;
     &__main {
-      border: 1px solid goldenrod;
+      // border: 1px solid goldenrod;
       justify-content: space-between;
       margin-top: 10em;
       min-height: 60vh;
@@ -205,12 +201,30 @@
       flex-direction: column;
       align-self: flex-start;
     }
+
+    &__question {
+      font-size: 2.75rem;
+      letter-spacing: .35rem;
+      line-height: 1.3;
+      font-weight: 300;
+      
+      &__container {
+        margin-top: 15rem;
+        max-width: 50rem;
+        max-height: 10rem;
+      }
+    }
+
+
+    &__cta__wrapper {
+      padding-top: 12.5em;
+    }
   }
 
 }
 
 
-/* MOBILE */
+/* === MOBILE === */
 @media (max-width: 55em) {
   .hero {
     /* border: 1px solid red; */
@@ -222,65 +236,90 @@
   
   
     &__main {
-      border: 1px solid red;
+      // border: 1px solid red;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding-top: 2rem;
     }
   
     &__content {
-      /* border: 1px solid red; */
+      // border: 1px solid red;
       flex-direction: column;
-      /* margin: 0 auto; */
-      padding: 5em 3em 5em;
+      word-break: normal;
+      margin-left: 0rem;
+      padding: 5em 0em 5em;
+      // margin-inline: 0rem;
     }
   
     &__title {
-      /* border: 1px solid red; */
-      font-size: 5rem;
+      // border: 1px solid red;
+      font-size: 4rem;
       letter-spacing: 0rem;
+      padding-inline: 1rem;
       line-height: 1;
     }
   
     &__description {
-      /* border: 1px solid red; */
+      // border: 1px solid red;
       margin-top: .5em;
-      font-size: 2rem;
+      font-size: 1.75rem;
       font-weight: 500;
       letter-spacing: .2rem;
+      padding-inline: 1rem;
     }
 
     &__cta {
-      /* border: 1px solid red; */
-      font-size: 2.25rem;
+      // border: 1px solid red;
+      font-size: 2rem;
 
-      &__cta__wrapper {
+      &__wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 5em 3em 0em;
-        margin-bottom: 0em;
-        max-width: fit-content;
+        margin-top: 5rem;
+        // max-width: fit-content;
       }
-      &__cta__container {
-        /* border: 1px solid red; */
+      &__container {
+        // border: 1px solid red;
         margin-right: auto;
         margin-left: auto;
       }
-    
-      &__cta__text {
-        /* border: 1px solid red; */
+
+      &__title {
+        font-size: 2rem;
+      }
+      
+      &__text {
+        // border: 1px solid red;
         font-size: 1.8rem;
         letter-spacing: .2rem;
         max-width: fit-content;
         margin-inline: auto;
       }
     }
-  
-    &__question__container {
-      padding-inline: 3em;
+
+    &__question {
+      font-size: 2rem;
+      align-self: center;
+      justify-self: center;
+      letter-spacing: .35rem;
+      line-height: 1.3;
+      font-weight: 300;
+
+      &__container {
+        // border: 1px solid red;
+        // padding-inline: 3em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+        max-width: 30rem;
+        height: 10rem;
+      }
+
     }
+  
   
     &__contact__container img {
       padding: .5em;
