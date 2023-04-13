@@ -9,12 +9,12 @@ import manutencaoHome from "../img/manutencao-home.jpg"
 export default function Main() {
   return (
     <div className="main__container">
-      <section className="main__section">
+      <div className="main__section">
 
-        <div className="main service-1 main__wrapper dark-bg">
+        <section className="main service-1 main__wrapper .full-bleed dark-bg">
 
 
-          <div className="main-info__container dark-bg">
+          <div className="main-info__container .full-bleed dark-bg">
             <h3 className="main__title">PROJETOS</h3>
             <div className="main__img__container">
               <img src={projetosHome} alt="projetos" className="main__img" />
@@ -23,9 +23,9 @@ export default function Main() {
             <a href="index.html" className="main__btn">Saiba mais</a>
           </div>
 
-        </div>
+        </section>
 
-        <div className="main service-1 main__wrapper light-bg">
+        <section className="main service-1 main__wrapper light-bg">
 
 
           <div className="main-info__container">
@@ -37,9 +37,9 @@ export default function Main() {
             <a href="index.html" className="main__btn">Saiba mais</a>
           </div>
 
-        </div>
+        </section>
 
-        <div className="main service-1 main__wrapper dark-bg">
+        <section className="main service-1 main__wrapper dark-bg">
 
 
           <div className="main-info__container dark-bg">
@@ -51,9 +51,9 @@ export default function Main() {
             <a href="index.html" className="main__btn">Saiba mais</a>
           </div>
 
-        </div>
+        </section>
 
-        <div className="main service-2">
+        <section className="main service-2">
 
           <div className="main__img__container">
             <img src={cftvHome} alt="circuito fechado de televisão" className="main__img" />
@@ -65,9 +65,9 @@ export default function Main() {
             <a href="index.html" className="main__btn">Saiba mais</a>
           </div>
 
-        </div>
+        </section>
 
-        <div className="main service-1">
+        <section className="main service-1">
 
           <div className="main__img__container">
             <img src={cercaEletricaHome} alt="cerca elétrica" className="main__img" />
@@ -79,9 +79,9 @@ export default function Main() {
             <a href="index.html" className="main__btn">Saiba mais</a>
           </div>
 
-        </div>
+        </section>
 
-        <div className="main service-2">
+        <section className="main service-2">
 
           <div className="main__img__container">
             <img src={controleDeAcessoHome} alt="controle de acesso" className="main__img" />
@@ -93,9 +93,9 @@ export default function Main() {
             <a href="index.html" className="main__btn">Saiba mais</a>
           </div>
 
-        </div>
+        </section>
 
-      </section>
+      </div>
     </div>
   )
 }
