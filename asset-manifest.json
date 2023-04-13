@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/bigcontrol/static/css/main.363b13d1.css",
-    "main.js": "/bigcontrol/static/js/main.e715a0b7.js",
+    "main.css": "/bigcontrol/static/css/main.85677c14.css",
+    "main.js": "/bigcontrol/static/js/main.d72f495d.js",
+    "static/media/cftv-servicos.jpg": "/bigcontrol/static/media/cftv-servicos.2df4db90d74baf5a292f.jpg",
     "static/media/hero-background.png": "/bigcontrol/static/media/hero-background.50f063b93bdfd7c08ae1.png",
+    "static/media/controle-de-acesso-servicos.jpg": "/bigcontrol/static/media/controle-de-acesso-servicos.4864183716fc4e6d5b71.jpg",
+    "static/media/cerca-eletrica-servicos.jpg": "/bigcontrol/static/media/cerca-eletrica-servicos.9d6ab1feb28fffea31c0.jpg",
     "static/media/cftv-home.jpeg": "/bigcontrol/static/media/cftv-home.3a309f56ca2e7e08808a.jpeg",
     "static/media/cerca-eletrica-home.jpeg": "/bigcontrol/static/media/cerca-eletrica-home.9f1aaf0a3f0a32821a82.jpeg",
     "static/media/controle-de-acesso-home.jpg": "/bigcontrol/static/media/controle-de-acesso-home.6178db6325b90dc8b71b.jpg",
     "static/media/big-control-home.png": "/bigcontrol/static/media/big-control-home.02134c785b8edac50234.png",
     "index.html": "/bigcontrol/index.html",
-    "main.363b13d1.css.map": "/bigcontrol/static/css/main.363b13d1.css.map",
-    "main.e715a0b7.js.map": "/bigcontrol/static/js/main.e715a0b7.js.map"
+    "main.85677c14.css.map": "/bigcontrol/static/css/main.85677c14.css.map",
+    "main.d72f495d.js.map": "/bigcontrol/static/js/main.d72f495d.js.map"
   },
   "entrypoints": [
-    "static/css/main.363b13d1.css",
-    "static/js/main.e715a0b7.js"
+    "static/css/main.85677c14.css",
+    "static/js/main.d72f495d.js"
   ]
 }
