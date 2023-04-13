@@ -48,7 +48,7 @@ export default function Hero() {
           <div className="hero__main">
 
             <div className="hero__content">
-              <h1 className="hero__title">BIG CONTROL</h1>
+              <h1 className="hero__title">Big<span className="white-text">Control</span></h1>
               <p className="hero__description">
                 Segurança Eletrônica,
                 <br />
@@ -72,7 +72,7 @@ export default function Hero() {
                   Projetos,<br /> Execução e Manutenção
                 </p>
                 {/* <p className="hero__cta__text">Confira nossos serviços</p> */}
-                <a href="index.html" className="hero__cta">Conhecer mais</a>
+                <a href="index.html" className="hero__cta">Conhecer</a>
                 {/* <div className="hero__question__container">
                   <p className="hero__question">{newQuestion}</p>
                   <p className="hero__question"></p>

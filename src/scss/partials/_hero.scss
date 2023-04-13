@@ -30,11 +30,12 @@
   &__title {
     // border: 1px solid red;
     /* color: #D6B34B; */
-    background: -webkit-linear-gradient(#F4DE86, #776431);
+    font-family: "Sony Sketch EF", sans-serif;
+    background: -webkit-linear-gradient(#F4DE86, #947d40);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 6rem;
+    font-size: 8rem;
     font-weight: 900;
     letter-spacing: .25rem;
   }
@@ -61,6 +62,13 @@
     animation-timing-function: ease-in;
     transition: opacity 2s ease-in;
   }
+
+.white-text {
+  background: -webkit-linear-gradient(#dddddd, #bdbdbd);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
   @keyframes changing-text {
     0% {
@@ -112,7 +120,7 @@
     font-weight: 900;
     background-color: $color-light;
     border: none;
-    border-radius: 1em;
+    border-radius: .25rem;
     font-size: 2.5rem;
     letter-spacing: .15rem;
     padding: 0.5em 1em;
@@ -255,7 +263,7 @@
   
     &__title {
       // border: 1px solid red;
-      font-size: 4rem;
+      font-size: 5.5rem;
       letter-spacing: 0rem;
       padding-inline: 1rem;
       line-height: 1;
