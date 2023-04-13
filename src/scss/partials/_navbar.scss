@@ -207,9 +207,14 @@
     position: relative;
     cursor: pointer;
     padding: 1px 20px;
-    /* border: 1px solid red; */
+    // border: 1px solid red;
     z-index: 2;
   }
+
+  .menu-wrapper__btn:active {
+    -webkit-tap-highlight-color: transparent;
+  }
+
   .menu__btn,
   .menu__btn::before,
   .menu__btn::after,

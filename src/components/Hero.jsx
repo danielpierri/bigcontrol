@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react"
+import ReactWhatsapp from "react-whatsapp"
 import Navbar from "./Navbar"
 import "../App.scss"
 import wpplogo from "../img/whatsapp-128.png"
@@ -82,9 +83,9 @@ export default function Hero() {
 
           </div>
 
-
           <div className="hero__contact__container">
-            <img src={wpplogo} alt="WhatsApp logo" />
+
+              <a href="https://wa.me/5521993395960?" target="_blank" rel="noreferrer"><img src={wpplogo} alt="WhatsApp logo" /></a>
             <p>(21)99999-9999</p>
           </div>
         </div>
