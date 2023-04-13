@@ -37,7 +37,7 @@
 }
 
 .main__img__container {
-  background-color: $color-bg;
+  // background-color: $color-bg;
 }
 
 .main__img {
@@ -114,12 +114,15 @@
   }
 
   .main-info__container {
-    /* border: 1px solid deeppink; */
+    // border: 1px solid deeppink;
     flex-direction: column;
     min-width: 50%;
     padding: 5.5em;
   }
 
+  .main-info__container.dark-bg {
+    background-color: #000;
+  }
   .main__img__container {
     display: flex;
     min-width: 50%;
@@ -133,6 +136,12 @@
     min-width: 100%;
   }
   
+  .main__wrapper.dark-bg {
+    // border: 1px solid red;
+    background-color: #000;
+    min-width: 100vw;
+  }
+
   .main.main__wrapper .main-info__container{
     max-width: 1300px;
     margin-left: auto;
@@ -217,7 +226,6 @@
   }
 
   .main__img {
-    border: 10px solid $color-bg;
     border-radius: 15px;
     height: 100%;
     width: 100%;

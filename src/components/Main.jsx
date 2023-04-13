@@ -11,7 +11,7 @@ export default function Main() {
     <div className="main__container">
       <section className="main__section">
 
-        <div className="main service-1 main__wrapper">
+        <div className="main service-1 main__wrapper dark-bg">
 
 
           <div className="main-info__container dark-bg">
@@ -42,7 +42,7 @@ export default function Main() {
         <div className="main service-1 main__wrapper dark-bg">
 
 
-          <div className="main-info__container">
+          <div className="main-info__container dark-bg">
             <h3 className="main__title">MANUTENÇÃO</h3>
             <div className="main__img__container">
               <img src={manutencaoHome} alt="manutenção" className="main__img" />
