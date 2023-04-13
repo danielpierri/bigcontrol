@@ -4,7 +4,7 @@ import logo from "../img/big-control-home.png"
 
 export default function Navbar() {
   const [menu, setMenu] = useState(false)
-  console.log(menu)
+
   const menuAction = (e) => {
     e.preventDefault()
     setMenu(prevMenu => !prevMenu)
