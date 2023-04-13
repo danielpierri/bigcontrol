@@ -1,9 +1,11 @@
 @import "../variables/colors";
 @import "../variables/fonts";
 
-.services__container {
+.services,
+.services__container,
+.service,
+.service__img__container {
   border: 1px solid red;
-  color: $color-white;
 }
 
 .services {
@@ -13,24 +15,46 @@
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+
+  &__container {
+    border: 1px solid red;
+    color: $color-white;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4.25rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+  }
+  
+  &__text {
+    font-family: "Nunito", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 1.3px;
+  }
 }
 
 .service {
   margin-bottom: 5rem;
+
+  &__img__container {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__img {
+    max-width: 100%;
+    object-fit: cover;
+  }
 }
 
-.services__title {
-  text-align: center;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 4.25rem;
-  font-weight: 700;
-  letter-spacing: 1.8px;
-}
-
-.services__text {
-  font-family: "Nunito", sans-serif;
-  font-size: 2.25rem;
-  font-weight: 300;
-  line-height: 1.6;
-  letter-spacing: 1.3px;
+@media (min-width: 55em) {
+  .service {
+    
+  }
 }
