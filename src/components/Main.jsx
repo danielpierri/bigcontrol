@@ -2,13 +2,58 @@ import React from "react"
 import cercaEletricaHome from "../img/cerca-eletrica-home.jpeg"
 import cftvHome from "../img/cftv-home.jpeg"
 import controleDeAcessoHome from "../img/controle-de-acesso-home.jpg"
+import projetosHome from "../img/projetos-home.jpg"
+import monitoramentoEmTempoReal from "../img/monitoramento-em-tempo-real-home.jpg"
+import manutencaoHome from "../img/manutencao-home.jpg"
 
 export default function Main() {
   return (
     <div className="main__container">
       <section className="main__section">
 
-        <div className="main service-1">
+        <div className="main service-1 main__wrapper">
+
+
+          <div className="main-info__container dark-bg">
+            <h3 className="main__title">PROJETOS</h3>
+            <div className="main__img__container">
+              <img src={projetosHome} alt="projetos" className="main__img" />
+            </div>
+            <p className="main__text">A função principal de segurança perimetral é inibir a ação de possíveis invasores. Para isso as principal ferramentas utilizadas são a concertina e a cerca elétrica. Outras opções são os sensores de barreira ou câmeras perimetrais para identificar se a área do perímetro foi invadida. Em geral, quando percebem o sistema de segurança, possíveis infratores avaliam a situação e desistem.</p>
+            <a href="index.html" className="main__btn">Saiba mais</a>
+          </div>
+
+        </div>
+
+        <div className="main service-1 main__wrapper light-bg">
+
+
+          <div className="main-info__container">
+            <h3 className="main__title">MONITORAMENTO EM TEMPO REAL</h3>
+            <div className="main__img__container">
+              <img src={monitoramentoEmTempoReal} alt="monitoramento em tempo real" className="main__img" />
+            </div>
+            <p className="main__text">A função principal de segurança perimetral é inibir a ação de possíveis invasores. Para isso as principal ferramentas utilizadas são a concertina e a cerca elétrica. Outras opções são os sensores de barreira ou câmeras perimetrais para identificar se a área do perímetro foi invadida. Em geral, quando percebem o sistema de segurança, possíveis infratores avaliam a situação e desistem.</p>
+            <a href="index.html" className="main__btn">Saiba mais</a>
+          </div>
+
+        </div>
+
+        <div className="main service-1 main__wrapper dark-bg">
+
+
+          <div className="main-info__container">
+            <h3 className="main__title">MANUTENÇÃO</h3>
+            <div className="main__img__container">
+              <img src={manutencaoHome} alt="manutenção" className="main__img" />
+            </div>
+            <p className="main__text">A função principal de segurança perimetral é inibir a ação de possíveis invasores. Para isso as principal ferramentas utilizadas são a concertina e a cerca elétrica. Outras opções são os sensores de barreira ou câmeras perimetrais para identificar se a área do perímetro foi invadida. Em geral, quando percebem o sistema de segurança, possíveis infratores avaliam a situação e desistem.</p>
+            <a href="index.html" className="main__btn">Saiba mais</a>
+          </div>
+
+        </div>
+
+        <div className="main service-2">
 
           <div className="main__img__container">
             <img src={cftvHome} alt="circuito fechado de televisão" className="main__img" />
@@ -22,7 +67,7 @@ export default function Main() {
 
         </div>
 
-        <div className="main service-2">
+        <div className="main service-1">
 
           <div className="main__img__container">
             <img src={cercaEletricaHome} alt="cerca elétrica" className="main__img" />
@@ -36,7 +81,7 @@ export default function Main() {
 
         </div>
 
-        <div className="main service-3">
+        <div className="main service-2">
 
           <div className="main__img__container">
             <img src={controleDeAcessoHome} alt="controle de acesso" className="main__img" />
