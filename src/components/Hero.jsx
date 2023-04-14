@@ -1,43 +1,73 @@
-import React, { useCallback, useEffect, useState } from "react"
-import ReactWhatsapp from "react-whatsapp"
+import React, { useEffect, useState } from "react"
+// import Fade from "./hooks/Fade"
 import Navbar from "./Navbar"
 import "../App.scss"
 import wpplogo from "../img/whatsapp-128.png"
 
+const FADE_INTERVAL_MS = 2500
+const WORD_CHANGE_INTERVAL_MS = FADE_INTERVAL_MS * 2
+const WORDS_TO_ANIMATE = [
+  "Você sabe se suas câmeras estão gravando?",
+  "Você sabia que 90% dos roubos são de pessoas de dentro?",
+  "Você sabia que é possível combinar beleza e segurança?",
+  "Lorem4 lorem4 lorem4 lorem4?"
+]
 
 export default function Hero() {
-  const questions = [
-    "Lorem lorem lorem lorem?",
-    "Lorem2 lorem2 lorem2 lorem2?",
-    "Lorem3 lorem3 lorem3 lorem3?"
-  ]
 
-  const [newQuestion, setNewQuestion] = useState(questions[0])
-
-  const [opacity, setOpacity] = useState(0)
-
-  const shuffle = useCallback(() => {
-    const index = Math.floor(Math.random() * questions.length)
-    setNewQuestion(questions[index])
-    setOpacity((prevOpacity) => prevOpacity = 0)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [opacity])
+  const [fadeProp, setFadeProp] = useState({ fade: "fade-in"})
+  const [wordOrder, setWordOrder] = useState(0)
 
   useEffect(() => {
-    const intervalID = setInterval(shuffle, 5000)
-    return () => clearInterval(intervalID)
-  }, [shuffle])
+    const fadeTimeout = setInterval(() => {
+      fadeProp.fade === "fade-in" ? setFadeProp({ fade: "fade-out" }) : setFadeProp({ fade: "fade-in" })
+    }, FADE_INTERVAL_MS)
 
-  // SLIDER CODE TEST
-  // const words = [
-  //   {id: 0, value: "Apple"},
-  //   {id: 1, value: "Mango"},
-  //   {id: 2, value: "Banana"}
+    return () => clearInterval(fadeTimeout)
+  }, [fadeProp])
+
+  useEffect(() => {
+    const wordTimeout = setInterval(() => {
+      setWordOrder((prevWordOrder) => (prevWordOrder + 1) % WORDS_TO_ANIMATE.length)
+    }, WORD_CHANGE_INTERVAL_MS)
+
+    return () => clearInterval(wordTimeout)
+  }, [])
+
+  // const questions = [
+  //   "Lorem lorem lorem lorem?",
+  //   "Lorem2 lorem2 lorem2 lorem2?",
+  //   "Lorem3 lorem3 lorem3 lorem3?",
+  //   "Lorem4 lorem4 lorem4 lorem4?",
+  //   "Lorem5 lorem5 lorem5 lorem5?",
+  //   "Lorem6 lorem6 lorem6 lorem6?",
+  //   "Lorem7 lorem7 lorem7 lorem7?",
+  //   "Lorem8 lorem8 lorem8 lorem8?",
   // ]
 
-
-
+  // const [newQuestion, setNewQuestion] = useState(questions[0])
   
+  // const [show, setShow] = useState(true)
+  
+  // console.log(show)
+  // const shuffle = useCallback(() => {
+  //   const index = Math.floor(Math.random() * questions.length)
+  //   setShow(show => !show)
+  //   setNewQuestion(questions[index])
+  //   eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [])
+  
+  // const shuffle1 = useCallback(() => {
+  //   const index = 
+  //   setNewQuestion(questions[index])
+  //   eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [])
+  
+  // useEffect(() => {
+  //   setShow(show => !show)
+  //   const intervalID = setInterval(shuffle, 5000)
+  //   return () => clearInterval(intervalID)
+  // }, [shuffle])
 
   return (
     <>
@@ -56,8 +86,12 @@ export default function Hero() {
                 Perimetral e Controle de Acesso
               </p>
               <div className="hero__question__container">
-                  <p style={{}} className="hero__question">{newQuestion}</p>
-                  <p className="hero__question"></p>
+                  {/* <Fade show={show}>
+                    <p className="hero__question" on >{show === true ? newQuestion : () => setShow(show => !show)}</p>
+                  </Fade> */}
+                  <p className="hero__question">
+                    <span className={fadeProp.fade}>{WORDS_TO_ANIMATE[wordOrder]}</span>
+                  </p>
                   {/* <div>{wordData}</div>
                   <div className="flex-row">
                     {words.map((data, i) => <p onClick={handleClick(i)}>.</p>)} 
