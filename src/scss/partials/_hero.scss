@@ -129,6 +129,16 @@
     padding: .5em;
     height: 50px;
     margin-bottom: .75em;
+    transition: transform .2s;
+  }
+
+  &__contact__container img:hover {
+    box-shadow: 0 0 10px #ffd36d;
+    transform: scale(1.05);
+  }
+
+  &__contact__container img:active {
+    transform: scale(1);
   }
   
   &__contact__container p {
