@@ -307,6 +307,10 @@
       height: 100%;
       width: 100%;
     }
+
+    &__info__container.dark-bg .main__img__container {
+      background-color: $color-dark-grey;
+    }
   
     &__title {
       align-self: center;
