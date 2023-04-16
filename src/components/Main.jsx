@@ -53,7 +53,7 @@ export default function Main() {
 
         </section>
 
-        <section className="main service-2">
+        <section className="main main__service service-2">
 
           <div className="main__img__container">
             <img src={cftvHome} alt="circuito fechado de televisão" className="main__img" />
@@ -67,7 +67,7 @@ export default function Main() {
 
         </section>
 
-        <section className="main service-1">
+        <section className="main main__service service-1">
 
           <div className="main__img__container">
             <img src={cercaEletricaHome} alt="cerca elétrica" className="main__img" />
@@ -81,7 +81,7 @@ export default function Main() {
 
         </section>
 
-        <section className="main service-2">
+        <section className="main main__service service-2">
 
           <div className="main__img__container">
             <img src={controleDeAcessoHome} alt="controle de acesso" className="main__img" />
