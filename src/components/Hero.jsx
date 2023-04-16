@@ -34,41 +34,6 @@ export default function Hero() {
     return () => clearInterval(wordTimeout)
   }, [])
 
-  // const questions = [
-  //   "Lorem lorem lorem lorem?",
-  //   "Lorem2 lorem2 lorem2 lorem2?",
-  //   "Lorem3 lorem3 lorem3 lorem3?",
-  //   "Lorem4 lorem4 lorem4 lorem4?",
-  //   "Lorem5 lorem5 lorem5 lorem5?",
-  //   "Lorem6 lorem6 lorem6 lorem6?",
-  //   "Lorem7 lorem7 lorem7 lorem7?",
-  //   "Lorem8 lorem8 lorem8 lorem8?",
-  // ]
-
-  // const [newQuestion, setNewQuestion] = useState(questions[0])
-  
-  // const [show, setShow] = useState(true)
-  
-  // console.log(show)
-  // const shuffle = useCallback(() => {
-  //   const index = Math.floor(Math.random() * questions.length)
-  //   setShow(show => !show)
-  //   setNewQuestion(questions[index])
-  //   eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, [])
-  
-  // const shuffle1 = useCallback(() => {
-  //   const index = 
-  //   setNewQuestion(questions[index])
-  //   eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, [])
-  
-  // useEffect(() => {
-  //   setShow(show => !show)
-  //   const intervalID = setInterval(shuffle, 5000)
-  //   return () => clearInterval(intervalID)
-  // }, [shuffle])
-
   return (
     <>
       <div className="hero__bg">
@@ -86,17 +51,9 @@ export default function Hero() {
                 Perimetral e Controle de Acesso
               </p>
               <div className="hero__question__container">
-                  {/* <Fade show={show}>
-                    <p className="hero__question" on >{show === true ? newQuestion : () => setShow(show => !show)}</p>
-                  </Fade> */}
                   <p className="hero__question">
                     <span className={fadeProp.fade}>{WORDS_TO_ANIMATE[wordOrder]}</span>
                   </p>
-                  {/* <div>{wordData}</div>
-                  <div className="flex-row">
-                    {words.map((data, i) => <p onClick={handleClick(i)}>.</p>)} 
-                  </div>*/}
-
                 </div>
             </div>
 
@@ -106,12 +63,7 @@ export default function Hero() {
                 <p className="hero__cta__title">
                   Projetos,<br /> Execução e Manutenção
                 </p>
-                {/* <p className="hero__cta__text">Confira nossos serviços</p> */}
                 <a href="index.html" className="hero__cta">Conhecer</a>
-                {/* <div className="hero__question__container">
-                  <p className="hero__question">{newQuestion}</p>
-                  <p className="hero__question"></p>
-                </div> */}
               </div>
             </div>
 

@@ -1,36 +1,6 @@
-@import "../variables/colors";
-@import "../variables/fonts";
-
-
-.fade-in {
-  transition: opacity .5s ease;
-}
-
-.fade-out {
-  opacity: 0;
-  transition: opacity .5s ease;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+@import "../variables/variables";
 
 .hero {
-  // border: 1px solid yellow;
   &__bg {
     background-color: #AAA;
     background-image: url(../../img/hero-background.png);
@@ -39,25 +9,45 @@
     background-blend-mode: multiply;
     min-height: 100vh;
     position: relative;
-    box-shadow: 0px 3px 15px #111;
-    // border: 1px solid rosybrown;
-  }
+    box-shadow: 3px 3px 15px #111;
 
+    &::after {
+      content: "";
+      background: linear-gradient(to right, transparent, $color-light-gold, transparent);
+      height: 1px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      background: linear-gradient(to right, transparent, $color-light-gold, transparent);
+      height: 1px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+  }
+  
   &__main {
-    // border: 1px solid powderblue;
     display: flex;
   }
   
   &__content {
-    // border: 1px solid red;
     color: #EEE;
     display: flex;
-    // border: 1px solid green;
   }
   
   &__title {
-    // border: 1px solid red;
-    /* color: #D6B34B; */
     font-family: "Sony Sketch EF", sans-serif;
     background: -webkit-linear-gradient(#F4DE86, #947d40);
     background-clip: text;
@@ -69,13 +59,12 @@
   }
   
   &__description {
-    // border: 1px solid red;
     font-size: 3rem;
     letter-spacing: .45rem;
     line-height: 1.5;
     font-weight: 300;
   }
-
+  
   &__question__container {
     display: flex;
     align-self: center;
@@ -83,81 +72,60 @@
   }
   
   &__question {
-    // border: 1px solid yellowgreen;
     text-align: center;
-    // animation-name: changing-text;
-    // animation-duration: 7s;
-    // animation-iteration-count: infinite;
-    // animation-timing-function: ease-out;
-    // animation-direction: reverse;
     transition: all;
   }
-
-.white-text {
-  background: -webkit-linear-gradient(#dddddd, #bdbdbd);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-  @keyframes changing-text {
-    // 100% {
-    //   opacity: 0;
-    // }
-    // 0% {
-    //   opacity: 1;
-    // }
+  
+  .white-text {
+    background: -webkit-linear-gradient(#dddddd, #bdbdbd);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-
+ 
   &__contact__container {
-    // border: 1px solid red;
-    /* display: flex;
-    flex-direction: column;
-    align-items: end;
-    margin-top: 6em; */
     position: fixed;
     text-align: end;
     right: 0;
     bottom: 20px;
     z-index: 1;
+    & img {
+      background-color: $color-black;
+      border-radius: 10px 0 0 10px;
+      padding: .5em;
+      height: 50px;
+      margin-bottom: .75em;
+      transition: transform .1s;
+    }
+    
+    & img:hover {
+      box-shadow: 0 0 10px #ffd36d;
+      transform: scale(1.025);
+    }
+    
+    & img:active {
+      transform: scale(1);
+    }
+    
+    & p {
+      // border: 1px solid red;
+      color: $color-white;
+      background-color: $color-black;
+      border-radius: 10px 0 0 10px;
+      font-size: 2rem;
+      padding-right: .5em;
+      padding-left: .25em;
+      padding-top: .15em;
+      padding-bottom: .15em;
+    }
   }
   
-  &__contact__container img {
-    // border: 1px solid red;
-    background-color: #000;
-    border-radius: 10px 0 0 10px;
-    padding: .5em;
-    height: 50px;
-    margin-bottom: .75em;
-    transition: transform .2s;
-  }
-
-  &__contact__container img:hover {
-    box-shadow: 0 0 10px #ffd36d;
-    transform: scale(1.05);
-  }
-
-  &__contact__container img:active {
-    transform: scale(1);
-  }
-  
-  &__contact__container p {
-    // border: 1px solid red;
-    color: #FFF;
-    background-color: #000;
-    border-radius: 10px 0 0 10px;
-    font-size: 2rem;
-    padding-right: .5em;
-    padding-left: .25em;
-    padding-top: .15em;
-    padding-bottom: .15em;
-  }
   
   &__cta {
     display: inline-block;
     font-family: 'Nunito', sans-serif;
     font-weight: 900;
-    background-color: $color-light;
+    background-color: $color-light-gold;
     border: none;
     border-radius: .25rem;
     font-size: 2.5rem;
@@ -165,11 +133,11 @@
     padding: 0.5em 1em;
     cursor: pointer;
     text-decoration: none;
-    color: #000;
+    color: $color-black;
     transition: .2s;
 
     &:hover {
-      background-color: $color-accent;
+      background-color: $color-accent-gold;
       box-shadow: 0 0 10px #D6B34B;
     }
 
@@ -178,7 +146,6 @@
     }
 
     &__wrapper {
-      // border: 1px solid yellowgreen;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -188,14 +155,12 @@
     }
     
     &__container {
-      // border: 1px solid yellowgreen;
       text-align: center;
       align-self: center;
       margin-bottom: 3em;
     }
 
     &__title {
-      // border: 1px solid yellowgreen;
       color: #EEE;
       margin-bottom: .75em;
       font-size: 2.5rem;
@@ -205,7 +170,6 @@
     }
 
     &__text {
-      // border: 1px solid yellowgreen;
       color: #EEE;
       margin-bottom: .75em;
       font-size: 2rem;
@@ -215,31 +179,17 @@
   }
 }
 
-/* .hero__bg::after {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: #000;
-  z-index: 1;
-} */
-
 /* === DESKTOP === */
 @media (min-width: 55em) {
   .hero {
     max-width: 1800px;
     margin: 0 auto;
+
     &__main {
-      // border: 1px solid goldenrod;
       justify-content: space-between;
       margin-top: 10em;
       min-height: 60vh;
       max-width: 1300px;
-      // padding-left: 50px;
-      // padding-right: 50px;
       margin-right: auto;
       margin-left: auto;
     }
@@ -255,14 +205,13 @@
       letter-spacing: .35rem;
       line-height: 1.3;
       font-weight: 300;
-      
+
       &__container {
         margin-top: 15rem;
         max-width: 50rem;
         max-height: 10rem;
       }
     }
-
 
     &__cta__wrapper {
       padding-top: 12.5em;
@@ -275,16 +224,14 @@
 /* === MOBILE === */
 @media (max-width: 55em) {
   .hero {
-    /* border: 1px solid red; */
+
     &__bg {
-      /* border: 1px solid red; */
       background-position: 80%;
       max-height: 100vh;
     }
   
   
     &__main {
-      // border: 1px solid red;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -292,16 +239,13 @@
     }
   
     &__content {
-      // border: 1px solid red;
       flex-direction: column;
       word-break: normal;
       margin-left: 0rem;
       padding: 5em 0em 5em;
-      // margin-inline: 0rem;
     }
   
     &__title {
-      // border: 1px solid red;
       font-size: 5.5rem;
       letter-spacing: 0rem;
       padding-inline: 1rem;
@@ -309,7 +253,6 @@
     }
   
     &__description {
-      // border: 1px solid red;
       margin-top: .5em;
       font-size: 1.75rem;
       font-weight: 500;
@@ -318,7 +261,6 @@
     }
 
     &__cta {
-      // border: 1px solid red;
       font-size: 2rem;
 
       &__wrapper {
@@ -327,10 +269,8 @@
         align-items: center;
         justify-content: center;
         margin-top: 0rem;
-        // max-width: fit-content;
       }
       &__container {
-        // border: 1px solid red;
         margin-right: auto;
         margin-left: auto;
       }
@@ -340,7 +280,6 @@
       }
       
       &__text {
-        // border: 1px solid red;
         font-size: 1.8rem;
         letter-spacing: .2rem;
         max-width: fit-content;
@@ -357,8 +296,6 @@
       font-weight: 300;
 
       &__container {
-        // border: 1px solid red;
-        // padding-inline: 3em;
         margin-left: auto;
         margin-right: auto;
         margin-top: 5rem;
@@ -388,4 +325,32 @@
 .flex-row {
   display: flex;
   justify-content: center;
+}
+
+/* === HERO TEXT FADING IN & OUT ANIMATION */
+.fade-in {
+  transition: opacity .5s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

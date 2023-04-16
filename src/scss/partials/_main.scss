@@ -1,276 +1,344 @@
-@import "../variables/colors";
-@import "../variables/fonts";
+@import "../variables/variables";
 
-.main__container {
-  // background-color: $color-black;
-  max-width: 2100px;
-  margin: 0 auto;
+:root {
+  --anim-hover-out: hover-out-fake;
 }
-
-.main__section {
-  // background-color: $color-bg;
-  display: flex;
-}
-
-
 
 .main {
   display: flex;
-  background-color: $color-bg;
   text-align: left;
-}
 
-.main.main__wrapper {
-  display: flex;
-  flex-direction: column;
+  &__container {
+    max-width: 2100px;
+    margin: 0 auto;
+  }
+  
+  &__section {
+    display: flex;
+  }
 
-  & .main__title {
-    // border: 1px solid red;
-    align-self: center;
+  &__article {
+    display: flex;
+    position: relative;
+  
+    &::after {
+      content: "";
+      background: linear-gradient(to right, transparent, $color-light-gold, transparent);
+      height: 1px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  
+    & .main__title {
+      align-self: center;
+    }
+  }
+
+  &__info__container {
+    display: flex;
+    background-color: $color-grey;
+    color: #CCC;
+  }
+  
+  &__info__container.dark-bg {
+    background-color: #111;
+  }
+
+  &__img {
+    object-fit: contain;
+    object-position: center;
+  }
+  
+  &__title {
+    max-width: fit-content;
+    color: $color-light-gold;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+  }
+  
+  &__text {
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+  }
+  
+  &__article__btn,
+  &__btn {
+    align-self: end;
+    text-decoration: none;
+    color: $color-black;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  &__article__btn {
+    border-radius: 3px;
+    background-color: $color-light-gold;
+    padding: .5em .75em;
+    transition: background .2s, transform .1s;
+  }
+
+  &__btn {
+    padding-inline: 1px;
+    padding-block: 5px;
+    position: relative;
+    color: $color-white;
+    letter-spacing: 1.6px;
+    font-weight: 500;
+    z-index: 1000;
+    transition: color .25s;
+  }
+
+  &__btn::after {
+    content: "";
+    position: absolute;
+    background-color: $color-light-gold;
+    border-radius: 5px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    z-index: -1;
+    animation-name: button-hover-out;
+    animation-duration: .25s;
+    transition: background .25s;
+  }
+  
+  &__article__btn:hover,
+  &__article__btn:focus {
+    background-color: $color-white;
+    color: $color-black;
+  }
+
+  &__btn:hover::after {
+    background-color: $color-light-gold;
+    animation-name: button-hover;
+    animation-duration: .25s;
+    animation-fill-mode: both;
+  }
+  &__btn:hover,
+  &__btn:focus {
+    color: $color-black;
+  }
+
+  @keyframes button-hover {
+    from {
+      height: 2px;
+    }
+
+    to {
+      height: 100%;
+      --anim-hover-out: hover-out;
+    }
+  }
+
+  @keyframes button-hover-out {
+    from {
+      height: 100%;
+    }
+
+    to {
+      height: 2px;
+    }
+  }
+  
+  &__article__btn:active {
+    background-color: #BBB;
+    transform: scale(.99);
+  }
+
+  &__btn:active {
+    background-color: #BBB;
+    transform: scale(.99);
   }
 }
 
-.main-info__container {
-  display: flex;
-  background-color: $color-bg;/*  NIGHT MODE */
-  /* background-color: #CCC; */
-  color: #CCC; /* NIGHT MODE */
-  /* color: #000; */
-}
-
-.main__img__container {
-  // background-color: $color-bg;
-}
-
-.main__img {
-  object-fit: contain;
-  object-position: center;
-  max-height: 100cqh;
-}
-
-.main__title {
-  /* border: 1px solid red; */
-  max-width: fit-content;
-  color: $color-light; /* NIGHT MODE */
-  /* text-shadow: 0 0 2px #222; */
-  /* text-shadow: 0 0 2px #FFD36D; */
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 700;
-  letter-spacing: 1.8px;
-}
-
-.main__text {
-  /* border: 1px solid red; */
-  font-family: "Nunito", sans-serif;
-  font-weight: 300;
-  line-height: 1.2;
-  letter-spacing: 1.2px;
-}
-
-.main__btn {
-  align-self: end;
-  border-radius: 3px;
-  text-decoration: none;
-  background-color: $color-light; /* NIGHT MODE */
-  color: $color-black;
-  font-family: "Josefin Sans", sans-serif;
-  padding: .5em .75em;
-  transition: background .2s, transform .1s;
-}
-
-.main__btn:hover,
-.main__btn:focus {
-  background-color: $color-white; /* NIGHT MODE */
-  color: $color-black;
-}
-
-.main__btn:active {
-  background-color: #BBB; /* NIGHT MODE */
-  transform: scale(.99);
-}
-
+/* === DESKTOP === */
 @media (min-width: 55em) {
-  .main__container {
-  }
-
-  .main__section {
-    flex-direction: column;
-  }
-
   .main {
     flex-direction: row;
-  }
 
-  // .main, 
-  // .dark-bg,
-  // .dark-bg .main__img {
-  //   background-color: #000;
-  // }
-
-  .service-2 > .main__img__container {
-    order: 2;
-  }
-
-  .service-2 > .main-info__container {
-    order: 1;
-  }
-
-  .main-info__container {
-    // border: 1px solid deeppink;
-    flex-direction: column;
-    min-width: 50%;
-    padding: 5.5em;
-  }
-
-  .main-info__container.dark-bg {
-    background-color: #000;
-  }
-  .main__img__container {
-    display: flex;
-    min-width: 50%;
-    padding: 35px;
-  }
-
+    &__container {
+    }
   
-  .main__img {
-    border-radius: 10px;
-    object-fit: cover;
-    min-width: 100%;
-  }
+    &__section {
+      flex-direction: column;
+    }
+
+    &.service-2 > .main__img__container {
+      order: 2;
+    }
   
-  .main__wrapper {
+    &.service-2 > .main__info__container {
+      order: 1;
+    }
 
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .main__wrapper.dark-bg {
-    // border: 1px solid red;
-    background-color: #000;
-    margin-left: auto;
-    margin-right: auto;
+    &__info__container {
+      flex-direction: column;
+      min-width: 50%;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 5.5em;
+    }
+
+    &__article.dark-grey {
+      background-color: #111;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__img__container {
+      display: flex;
+      min-width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 35px;
+    }
+
+    &__img {
+      border-radius: 10px;
+      object-fit: cover;
+      min-width: 100%;
+    }
+    
+    &__article {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    &.main__article {
+      max-width: 1300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    &.main__article .main__img__container {
+      max-width: 50cqb;
+      margin-bottom: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    &__article__btn,
+    &__btn {
+      font-size: 2.5rem;
+    }
+
+    &__article__btn {
+      align-self: center;
+    }
+
+    &__btn {
+      align-self: flex-end;
+    }
+    
+    &__title {
+      font-size: 4.25rem;
+      margin-bottom: 1em;
+    }
+  
+    &__text {
+      font-size: 2.5rem;
+      font-family: "Nunito";
+      line-height: 1.4;
+      letter-spacing: 2.5px;
+      margin-bottom: 2.75em;
+    }
   }
 
+  /* BACKGROUND BLEED OUT OF SECTION */
   .full-bleed {
-    box-shadow: 0 0 0 100vmax #000;
+    box-shadow: 0 10px 0 100vmax #111;
     clip-path: inset(0 -100vmax);
   }
-
-  .main.main__wrapper .main-info__container{
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .main.main__wrapper .main__img__container {
-    // border: 1px solid red;
-    max-width: 50cqb;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .main.main__wrapper .main__btn {
-    align-self: center;
-  }
-
-  .main__container,
-  .main__section,
-  .main {
-    border: 1px solid red;
-  }
-  
-
-  .main__title {
-    font-size: 4.25rem;
-    margin-bottom: 1em;
-  }
-
-  .main__text {
-    font-size: 2.5rem;
-    font-family: "Nunito";
-    line-height: 1.4;
-    letter-spacing: 2.5px;
-    margin-bottom: 2.75em;
-  }
-
-  .main__btn {
-    font-size: 2.5rem;
-    margin-right: 2.5em;
-  }
 }
 
+/* === MOBILE === */
 @media (max-width: 55em) {
-  .main__container {
-    background: linear-gradient($color-black, $color-bg)
-  }
-
-  .main__section {
-    flex-direction: column;
-    align-items: space-between;
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .main {
     flex-direction: column;
     margin: 0;
     padding: 0;
-  }
 
-  .service-2 > .main__img__container {
-    order: 1;
-  }
+    &__container {
+      background: linear-gradient($color-black, $color-grey)
+    }
+  
+    &__section {
+      flex-direction: column;
+      align-items: space-between;
+      max-width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+    }
 
-  .service-2 > .main-info__container {
-    order: 2;
-  }
+    &.service-2 > .main__img__container {
+      order: 1;
+    }
 
-  .main-info__container {
-    /* border: 1px solid red; */
-    flex-direction: column;
-    margin: 0;
-    padding: 1.25em;
-  }
+    &.service-2 > .main__info__container {
+      order: 2;
+    }
 
-  .main__img__container {
-    /* border: 1px solid red; */
-    margin: 0;
-    padding: 0;
-    min-width: 100%;
-  }
-
-  .main__img {
-    border-radius: 15px;
-    height: 100%;
-    width: 100%;
-  }
-
-  .main__title {
-    align-self: center;
-    font-size: 2rem;
-    letter-spacing: 2px;
-    margin-block: .5em;
-  }
-
-  .main__text {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.4;
-    text-align: left;
-    margin-bottom: 1.25em;
-  }
-
-  .main__btn {
-    align-self: end;
-    font-size: 1.5rem;
-    margin-bottom: 1.5em;
-    margin-right: 1.5em;
-  }
-}
-
-@media (max-width: 1450px) {
-  .main__img {
+    &__info__container {
+      flex-direction: column;
+      margin: 0;
+      padding: 1.25em;
+    }
+  
+    &__img__container {
+      background-color: $color-grey;
+      margin: 0;
+      padding: 0 2rem;
+      min-width: 100%;
+    }
+  
+    &__img {
+      border-radius: 15px;
+      height: 100%;
+      width: 100%;
+    }
+  
+    &__title {
+      align-self: center;
+      font-size: 2rem;
+      letter-spacing: 2px;
+      margin-block: .5em;
+    }
+  
+    &__text {
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1.4;
+      text-align: left;
+      margin-inline: 2rem;
+      margin-bottom: 1.25em;
+    }
+  
+    &__article__btn,
+    &__btn {
+      font-size: 1.5rem;
+      margin-bottom: 1.5em;
+    }
     
+    &__article__btn {
+      align-self: center;
+    }
+    
+    &__btn {
+      align-self: end;
+      margin-right: 1.5em;
+    }
   }
+
 }
+

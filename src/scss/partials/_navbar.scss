@@ -247,9 +247,9 @@
   }
 
   .menu__btn::after {
-    opacity: 1;
     top: -10px;
     background-color: #FFD36D;
+    transition: opacity .5s;
   }
 
   .menu__btn--active {
@@ -274,9 +274,5 @@
     height: 2px;
     width: 30px;
     transform: rotate(-90deg);
-  }
-
-  .menu__btn--active::after {
-    opacity: 0;
   }
 }

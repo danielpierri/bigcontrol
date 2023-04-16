@@ -3,7 +3,13 @@
 @import "./scss/partials/main";
 @import "./scss/partials/services";
 @import "./scss/partials/footer";
-@import "./scss/variables/colors";
+@import "./scss/variables/variables";
+
+:root{
+  /* SCROLLBAR ON MOZILLA FIREFOX */
+  scrollbar-color: $color-light-gold $color-black !important;
+  scrollbar-width: thin !important; 
+}
 
 *,
 *::after,
@@ -19,9 +25,10 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: $color-bg;
+  background-color: $color-grey;
 }
 
+  /* SCROLLBAR ON MOST BROWSERS */
 .scroll {
   width: 30%;
   height: 100px;
@@ -45,17 +52,17 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #111;
+  background: $color-black;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $color-light;
+  background: $color-light-gold;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: $color-accent;
+  background: $color-accent-gold;
 }
 
 @media (min-width: 55em) {}

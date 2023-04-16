@@ -1,88 +1,85 @@
-@import "../variables/colors";
-@import "../variables/fonts";
+@import "../variables/variables";
 
 .footer__container {
-  /* border: 1px solid red; */
   background-color: #111;
   min-width: 100%;
   margin: 0 auto;
 }
 
 .footer {
-  /* border: 1px solid yellowgreen; */
   display: flex;
   flex-direction: column;
   color: #FFF;
   font-size: 1.5rem;
-}
 
-.footer > div {
-  /* border: 1px solid deeppink; */
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding-top: 1rem;
-}
-
-.footer__contact,
-.footer__social-media {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  /* align-items: center; */
-  margin-bottom: 1rem;
-}
-
-.footer__contact {
-  /* border: 1px solid aqua; */
-  flex-direction: column;
-  justify-content: left;
-  align-items: left;
-  text-align: left;
-}
-
-
-.footer__social-media {
-  /* border: 1px solid green; */
-  font-size: 2.5rem;
-}
-
-.footer__contact li,
-.footer__social-media li {
-  list-style: none;
-  margin-bottom: .75rem;
-}
-
-.footer__contact li {
-  letter-spacing: 1px;
-}
-
-.footer__contact li:first-child {
-  margin-top: 2rem;
-}
-
-.footer__contact li i {
-  color: $color-light;
-}
-
-.footer__social-media li {
-  cursor: pointer;
-  color: $color-light;
-  margin-right: 1.5rem;
-  transition: color .2s;
-}
-
-.footer__social-media li:hover {
-  color: #FFF;
-}
-
-.footer__copyright {
-  min-width: 100%;
-}
-
-.footer__copyright p {
-  /* border: 1px solid red; */
-  background-color: $color-light;
-  color: #000;
-  text-align: center;
+  & > div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 1rem;
+  }
+  
+  &__contact,
+  &__social-media {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* align-items: center; */
+    margin-bottom: 1rem;
+  }
+  
+  &__contact {
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+  }
+  
+  
+  &__social-media {
+    font-size: 2.5rem;
+  }
+  
+  &__contact li,
+  &__social-media li {
+    list-style: none;
+    margin-bottom: .75rem;
+  }
+  
+  &__contact li {
+    letter-spacing: 1px;
+  }
+  
+  &__contact li:first-child {
+    margin-top: 2rem;
+  }
+  
+  &__contact li i {
+    color: $color-light-gold;
+  }
+  
+  &__social-media a {
+    text-decoration: none;
+    color: $color-light-gold;
+    margin-right: 1.5rem;
+    transition: color .2s;
+  }
+  
+  &__social-media a:hover {
+    color: $color-white;
+  }
+  
+  &__social-media li:hover {
+    color: $color-white;
+  }
+  
+  &__copyright {
+    min-width: 100%;
+  }
+  
+  &__copyright p {
+    background-color: $color-light-gold;
+    color: $color-black;
+    text-align: center;
+  }
 }
