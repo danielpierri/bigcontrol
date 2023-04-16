@@ -281,6 +281,10 @@
       margin-left: auto;
     }
 
+    &__service {
+      
+    }
+
     &.service-2 > .main__img__container {
       order: 1;
     }
@@ -298,7 +302,9 @@
     &__img__container {
       background-color: $color-grey;
       margin: 0;
-      padding: 0 2rem;
+      padding-top: 3rem;
+      padding-bottom: 0;
+      padding-inline: 2rem;
       min-width: 100%;
     }
   
