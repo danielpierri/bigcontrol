@@ -11,6 +11,12 @@
   scrollbar-width: thin !important; 
 }
 
+::selection,
+::-moz-selection {
+  background-color: $color-accent-gold;
+  color: $color-black;
+}
+
 *,
 *::after,
 *::before {
