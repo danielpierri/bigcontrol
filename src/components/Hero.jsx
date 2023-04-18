@@ -72,7 +72,7 @@ export default function Hero() {
           <div className="hero__contact__container">
 
               <a href="https://wa.me/5521993395960?" target="_blank" rel="noreferrer"><img src={wpplogo} alt="WhatsApp logo" /></a>
-            <p>(21)99999-9999</p>
+              <a href="tel:+5521984870140"className="hero__phone" >(21) 98487-0140</a>
           </div>
         </div>
       </div>

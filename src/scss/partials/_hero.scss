@@ -84,10 +84,12 @@
   }
  
   &__contact__container {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     text-align: end;
     right: 0;
-    bottom: 20px;
+    bottom: 25px;
     z-index: 1;
     & img {
       background-color: $color-black;
@@ -98,25 +100,29 @@
       transition: transform .1s;
     }
     
-    & img:hover {
+    & img:hover,
+    & .hero__phone:hover {
       box-shadow: 0 0 10px #ffd36d;
       transform: scale(1.025);
     }
     
-    & img:active {
+    & img:active, 
+    & .hero__phone:active {
       transform: scale(1);
     }
     
-    & p {
+    & .hero__phone {
       // border: 1px solid red;
       color: $color-white;
       background-color: $color-black;
+      text-decoration: none;
       border-radius: 10px 0 0 10px;
       font-size: 2rem;
       padding-right: .5em;
       padding-left: .25em;
       padding-top: .15em;
       padding-bottom: .15em;
+      transition: transform .1s;
     }
   }
   
@@ -312,7 +318,7 @@
       margin-bottom: .25em;
     }
     
-    &__contact__container p {
+    & .hero__phone {
       font-size: 1.25rem;
       padding-right: .5em;
       padding-left: .25em;

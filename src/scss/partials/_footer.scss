@@ -48,6 +48,7 @@
   
   &__contact li {
     letter-spacing: 1px;
+    text-align: left;
   }
   
   &__contact li:first-child {
@@ -56,6 +57,20 @@
   
   &__contact li i {
     color: $color-light-gold;
+    text-align: center;
+    min-width: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__contact li a {
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  &__contact li a:hover {
+    color: $color-light-gold;
+    transition: color .2s;
   }
   
   &__social-media a {
@@ -81,5 +96,21 @@
     background-color: $color-light-gold;
     color: $color-black;
     text-align: center;
+  }
+}
+
+.signature {
+  color: #ffffffbe;
+  text-align: center;
+  font-size: 1.25rem;
+
+  & a {
+    text-decoration: none;
+    color: #ffffffbe;
+    transition: color .2s;
+
+    &:hover {
+      color: $color-light-gold;
+    }
   }
 }
