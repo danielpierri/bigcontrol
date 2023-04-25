@@ -191,6 +191,10 @@
     max-width: 1800px;
     margin: 0 auto;
 
+    &__bg {
+      min-height: 100svh;
+    }
+
     &__main {
       justify-content: space-between;
       margin-top: 10em;
