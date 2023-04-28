@@ -4,19 +4,19 @@
 .services__container,
 .service,
 .service__img__container {
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 .services {
-  border: 1px solid yellowgreen;
+  // border: 1px solid yellowgreen;
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 
   &__container {
-    border: 1px solid red;
+    // border: 1px solid red;
     color: $color-white;
   }
 
@@ -26,6 +26,7 @@
     font-size: 4.25rem;
     font-weight: 700;
     letter-spacing: 1.8px;
+    margin-top: 2.5rem;
   }
   
   &__text {
@@ -38,15 +39,32 @@
 }
 
 .service {
+  position: relative;
   margin-bottom: 5rem;
+  
+  &::after {
+    content: "";
+    background: linear-gradient(to right, transparent, $color-light-gold, transparent);
+    height: 1px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 
   &__img__container {
     max-width: 500px;
+    margin-top: 5rem;
     margin-left: auto;
     margin-right: auto;
   }
 
   &__img {
+    border-radius: 10px;
+    height: auto;
     max-width: 100%;
     object-fit: cover;
   }

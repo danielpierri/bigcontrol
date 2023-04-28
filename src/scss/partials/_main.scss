@@ -207,6 +207,7 @@
     &__img {
       border-radius: 10px;
       object-fit: cover;
+      height: auto;
       min-width: 100%;
     }
     
@@ -310,7 +311,7 @@
   
     &__img {
       border-radius: 15px;
-      height: 100%;
+      height: auto;
       width: 100%;
     }
 
