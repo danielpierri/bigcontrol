@@ -96,6 +96,7 @@
     background-color: $color-light-gold;
     color: $color-black;
     text-align: center;
+    font-size: 1.5rem;
   }
 }
 
@@ -111,6 +112,19 @@
 
     &:hover {
       color: $color-light-gold;
+    }
+  }
+}
+
+@media (max-width: 55em) {
+  .footer {
+
+    &__contact {
+      margin-left: 1rem;
+    }
+
+    &__copyright p {
+      font-size: 1rem;
     }
   }
 }
