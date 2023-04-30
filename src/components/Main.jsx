@@ -11,13 +11,13 @@ export default function Main() {
     <div className="main__container">
       <div className="main__section">
 
-        <section className="main service-1 main__article dark-bg">
+        <section className="main main__article service-1 dark-bg">
 
 
           <div className="main__info__container full-bleed dark-bg">
             <h3 className="main__title">PROJETOS</h3>
-            <div className="main__img__container">
-              <img src={projetosHome} alt="projetos" className="main__img" />
+            <div className="main__img__container main__services__img__container">
+              <img src={projetosHome} alt="projetos" className="main__img main__services__img" />
             </div>
             <p className="main__text">A função principal de segurança perimetral é inibir a ação de possíveis invasores. Para isso as principal ferramentas utilizadas são a concertina e a cerca elétrica. Outras opções são os sensores de barreira ou câmeras perimetrais para identificar se a área do perímetro foi invadida. Em geral, quando percebem o sistema de segurança, possíveis infratores avaliam a situação e desistem.</p>
             <a href="index.html" className="main__article__btn">Saiba mais</a>
@@ -25,13 +25,13 @@ export default function Main() {
 
         </section>
 
-        <section className="main service-1 main__article light-bg">
+        <section className="main main__article service-1 light-bg">
 
 
           <div className="main__info__container">
             <h3 className="main__title">MONITORAMENTO EM TEMPO REAL</h3>
-            <div className="main__img__container">
-              <img src={monitoramentoEmTempoReal} alt="monitoramento em tempo real" className="main__img" />
+            <div className="main__img__container main__services__img__container">
+              <img src={monitoramentoEmTempoReal} alt="monitoramento em tempo real" className="main__img main__services__img" />
             </div>
             <p className="main__text">A função principal de segurança perimetral é inibir a ação de possíveis invasores. Para isso as principal ferramentas utilizadas são a concertina e a cerca elétrica. Outras opções são os sensores de barreira ou câmeras perimetrais para identificar se a área do perímetro foi invadida. Em geral, quando percebem o sistema de segurança, possíveis infratores avaliam a situação e desistem.</p>
             <a href="index.html" className="main__article__btn">Saiba mais</a>
@@ -39,13 +39,13 @@ export default function Main() {
 
         </section>
 
-        <section className="main service-1 main__article">
+        <section className="main main__article service-1">
 
 
           <div className="main__info__container dark-bg full-bleed">
             <h3 className="main__title">MANUTENÇÃO</h3>
-            <div className="main__img__container">
-              <img src={manutencaoHome} alt="manutenção" className="main__img" />
+            <div className="main__img__container main__services__img__container">
+              <img src={manutencaoHome} alt="manutenção" className="main__img main__services__img" />
             </div>
             <p className="main__text">A função principal de segurança perimetral é inibir a ação de possíveis invasores. Para isso as principal ferramentas utilizadas são a concertina e a cerca elétrica. Outras opções são os sensores de barreira ou câmeras perimetrais para identificar se a área do perímetro foi invadida. Em geral, quando percebem o sistema de segurança, possíveis infratores avaliam a situação e desistem.</p>
             <a href="index.html" className="main__article__btn">Saiba mais</a>
@@ -55,8 +55,8 @@ export default function Main() {
 
         <section className="main main__service service-2">
 
-          <div className="main__img__container">
-            <img src={cftvHome} alt="circuito fechado de televisão" className="main__img" />
+          <div className="main__img__container main__topics__img__container">
+            <img src={cftvHome} alt="circuito fechado de televisão" className="main__img main__topics__img" />
           </div>
 
           <div className="main__info__container">
@@ -69,8 +69,8 @@ export default function Main() {
 
         <section className="main main__service service-1">
 
-          <div className="main__img__container">
-            <img src={cercaEletricaHome} alt="cerca elétrica" className="main__img" />
+          <div className="main__img__container main__topics__img__container">
+            <img src={cercaEletricaHome} alt="cerca elétrica" className="main__img main__topics__img" />
           </div>
 
           <div className="main__info__container">
@@ -83,8 +83,8 @@ export default function Main() {
 
         <section className="main main__service service-2">
 
-          <div className="main__img__container">
-            <img src={controleDeAcessoHome} alt="controle de acesso" className="main__img" />
+          <div className="main__img__container main__topics__img__container">
+            <img src={controleDeAcessoHome} alt="controle de acesso" className="main__img main__topics__img" />
           </div>
 
           <div className="main__info__container">

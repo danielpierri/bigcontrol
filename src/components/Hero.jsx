@@ -4,13 +4,13 @@ import Navbar from "./Navbar"
 import "../App.scss"
 import wpplogo from "../img/whatsapp-128.png"
 
-const FADE_INTERVAL_MS = 2500
+const FADE_INTERVAL_MS = 5000
 const WORD_CHANGE_INTERVAL_MS = FADE_INTERVAL_MS * 2
 const WORDS_TO_ANIMATE = [
   "Você sabe se suas câmeras estão gravando?",
   "Você sabia que 90% dos roubos são de pessoas de dentro?",
   "Você sabia que é possível combinar beleza e segurança?",
-  "Lorem4 lorem4 lorem4 lorem4?"
+  "O que fazer se o DVR for roubado?"
 ]
 
 export default function Hero() {

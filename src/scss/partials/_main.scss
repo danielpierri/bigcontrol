@@ -183,8 +183,7 @@
     &__info__container {
       flex-direction: column;
       min-width: 50%;
-      align-items: center;
-      justify-content: center;
+      height: auto;
       margin-left: auto;
       margin-right: auto;
       padding: 5.5em;
@@ -198,17 +197,33 @@
 
     &__img__container {
       display: flex;
-      min-width: 50%;
       margin-left: auto;
       margin-right: auto;
+    }
+    
+    &__services__img__container {
+      min-width: 650px;
+      max-width: 900px;
+    }
+    
+    &__topics__img__container {
+      min-width: 50%;
       padding: 35px;
     }
-
+    
     &__img {
       border-radius: 10px;
       object-fit: cover;
       height: auto;
       min-width: 100%;
+    }
+    
+    &__services__img {
+      max-width: 1000px;
+    }
+
+    &__topics__img {
+
     }
     
     &__article {
@@ -244,12 +259,14 @@
     
     &__title {
       font-size: 4.25rem;
+      text-shadow: 0 0 2px $color-light-gold;
       margin-bottom: 1em;
     }
   
     &__text {
       font-size: 2.5rem;
       font-family: "Nunito";
+      font-weight: 500;
       line-height: 1.4;
       letter-spacing: 2.5px;
       margin-bottom: 2.75em;
@@ -271,7 +288,7 @@
     padding: 0;
 
     &__container {
-      background: linear-gradient($color-black, $color-grey)
+      background: linear-gradient($color-black, $color-grey);
     }
   
     &__section {
@@ -296,6 +313,7 @@
 
     &__info__container {
       flex-direction: column;
+      text-align: center;
       margin: 0;
       padding: 1.25em;
     }
@@ -303,16 +321,33 @@
     &__img__container {
       background-color: $color-grey;
       margin: 0;
-      padding-top: 3rem;
+      padding-top: 1.5rem;
       padding-bottom: 0;
       padding-inline: 2rem;
       min-width: 100%;
     }
+    
+    &__services__img__container {
+
+    }
+
+    &__topics__img__container {
+      
+    }
   
+    
     &__img {
       border-radius: 15px;
       height: auto;
       width: 100%;
+    }
+
+    &__services__img {
+
+    }
+
+    &__topics__img {
+
     }
 
     &__info__container.dark-bg .main__img__container {
@@ -323,15 +358,17 @@
       align-self: center;
       font-size: 2rem;
       letter-spacing: 2px;
-      margin-block: .5em;
+      margin-top: .5rem;
+      margin-bottom: 0rem;
     }
   
     &__text {
       font-size: 1.5rem;
-      font-weight: 700;
+      font-weight: 300;
       line-height: 1.4;
       text-align: left;
       margin-inline: 2rem;
+      margin-top: 1.25rem;
       margin-bottom: 1.25em;
     }
   
