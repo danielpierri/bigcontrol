@@ -1,20 +1,27 @@
 @import "../variables/variables";
 
 .services__container * {
-  outline: 1px solid red;
+  // outline: 1px solid red;
 }
 
 .services {
   // border: 1px solid yellowgreen;
   display: flex;
   flex-direction: column;
-  max-width: 800px;
+  max-width: 1800px;
   margin-left: auto;
   margin-right: auto;
 
   &__container {
     // border: 1px solid red;
     color: $color-white;
+  }
+
+  &__title,
+  &__text {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__title {
@@ -37,8 +44,22 @@
   &__card {
     &__container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      justify-items: center;
+      gap: 5rem;
+      font-size: 1.75rem;
+    }
+
+    background-color: $color-light-gold;
+    color: $color-black;
+    padding: 2em;
+    max-width: 15em;
+    margin-block: 2rem;
+
+    & > img {
+      width: 11em;
+      height: 100px;
+      // height: auto;
     }
   }
 }
