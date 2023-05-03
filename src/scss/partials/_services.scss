@@ -55,7 +55,7 @@
       gap: 5rem;
     }
 
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 5px 5px 5px #000;
     background-color: $color-light-gold;
     color: $color-black;
@@ -97,8 +97,7 @@
   }
   
   &__img {
-    outline: 2px solid $color-accent-gold;
-    border-radius: 5px;
+    border-radius: 1px;
     height: auto;
     max-width: 100%;
     object-fit: cover;
@@ -108,6 +107,13 @@
 
 @media (min-width: 55em) {
   .service {
-    
+    &__img {
+      outline: 1px solid $color-accent-gold;
+    }
+  }
+}
+
+@media (max-width: 55em) {
+  .service {
   }
 }
