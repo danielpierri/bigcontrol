@@ -1,8 +1,24 @@
+@import "../variables/variables";
+
 /* === NAV === */
 
 .nav {
   display: flex;
-  /* border: 1px solid red; */
+  position: relative;
+  // border: 1px solid red;
+
+  &::after {
+    content: "";
+    background: linear-gradient(to right, transparent, $color-light-gold, transparent);
+    height: 1px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
 }
 
 .nav__list {
@@ -43,13 +59,13 @@
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
-    align-items: start;
-    padding: 0em 0 1em;
+    align-items: center;
+    padding: 0;
   }
   
   .nav__list {
     align-items: center;
-    margin-top: 2.25em;
+    margin-top: -1.5em;
     margin-right: 3em;
     /* border: 1px solid red; */
   }

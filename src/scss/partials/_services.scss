@@ -1,10 +1,7 @@
 @import "../variables/variables";
 
-.services,
-.services__container,
-.service,
-.service__img__container {
-  // border: 1px solid red;
+.services__container * {
+  outline: 1px solid red;
 }
 
 .services {
@@ -35,6 +32,14 @@
     font-weight: 300;
     line-height: 1.6;
     letter-spacing: 1.3px;
+  }
+
+  &__card {
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
   }
 }
 

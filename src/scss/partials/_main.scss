@@ -50,6 +50,7 @@
   }
 
   &__img {
+    box-shadow: 0px 0px 10px $color-dark-grey;
     object-fit: contain;
     object-position: center;
   }
@@ -57,6 +58,7 @@
   &__title {
     max-width: fit-content;
     color: $color-light-gold;
+    text-shadow: 2px 2px 5px $color-dark-grey;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 700;
     letter-spacing: 1.8px;
@@ -259,7 +261,6 @@
     
     &__title {
       font-size: 4.25rem;
-      text-shadow: 0 0 2px $color-light-gold;
       margin-bottom: 1em;
     }
   

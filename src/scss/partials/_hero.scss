@@ -23,19 +23,6 @@
       right: 0;
       bottom: 0;
     }
-
-    &::before {
-      content: "";
-      background: linear-gradient(to right, transparent, $color-light-gold, transparent);
-      height: 1px;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-    }
   }
   
   &__main {
