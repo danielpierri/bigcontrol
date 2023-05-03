@@ -5,6 +5,10 @@
 }
 
 .services {
+  &__bg {
+    background: linear-gradient(0deg,#111 30%, #252525, #111 );
+  }
+
   // border: 1px solid yellowgreen;
   display: flex;
   flex-direction: column;
@@ -74,8 +78,13 @@
 .service {
   position: relative;
   margin-bottom: 5rem;
-  
-  &::after {
+
+  &-1 {
+    padding-top: 5rem;
+  }
+
+  &-1::after,
+  &-2::after {
     content: "";
     background: linear-gradient(to right, transparent, $color-light-gold, transparent);
     height: 1px;

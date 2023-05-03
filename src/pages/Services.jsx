@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom"
 
 export default function Services() {
   return (
-    <div>
+    <div className="services__bg">
       <Navbar />
       <div className="services__container">
         <main className="services">

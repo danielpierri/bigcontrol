@@ -74,7 +74,11 @@ export default function Hero() {
               <a href="https://wa.me/5521984870140?" target="_blank" rel="noreferrer"><img src={wpplogo} alt="WhatsApp logo" /></a>
               <a href="tel:+5521984870140"className="hero__phone" >(21) 98487-0140</a>
           </div>
+          <div className="hero__hours">
+            <p>Horário de atendimento: Segunda a Sexta, 9h às 18h</p>
+          </div>
         </div>
+        
       </div>
     </>
   )
