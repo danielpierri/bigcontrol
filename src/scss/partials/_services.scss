@@ -79,10 +79,6 @@
   position: relative;
   margin-bottom: 5rem;
 
-  &-1 {
-    padding-top: 5rem;
-  }
-
   &-1::after,
   &-2::after {
     content: "";
@@ -101,7 +97,7 @@
     height: auto;
     max-width: 650px;
     padding: 1.5rem;
-    margin-top: 0rem;
+    margin-top: 2.5rem;
     margin-left: auto;
     margin-right: auto;
   }
