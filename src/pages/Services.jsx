@@ -51,6 +51,50 @@ export default function Services() {
             </div>
             <h2 className="services__title">Segurança Perimetral</h2>
             <p className="services__text">A função principal de segurança perimetral é inibir a ação de possíveis invasores. Para isso as principal ferramentas utilizadas são a concertina e a cerca elétrica. Outras opções são os sensores de barreira ou câmeras perimetrais para identificar se a área do perímetro foi invadida. Em geral, quando percebem o sistema de segurança, possíveis infratores avaliam a situação e desistem.</p>
+            <div className="services__card__container">
+              <div className="services__card">
+                <img src="" alt="" />
+                <h3>CÂMERAS EM REDE</h3>
+                <p>Câmeras baseadas no protocolo IP para gravação de imagens.</p>
+                <NavLink>conhecer</NavLink>
+              </div>
+              <div className="services__card">
+                <img src="" alt="" />
+                <h3>CÂMERAS ANALÓGICAS</h3>
+                <p>Câmeras analógicas com gravações digitais.</p>
+                <NavLink>conhecer</NavLink>
+              </div>
+              <div className="services__card">
+                <img src="" alt="" />
+                <h3>CÂMERAS PERIMETRAIS</h3>
+                <p>Câmeras com analíticos que detectam invasores humanos e veículos.</p>
+                <NavLink>conhecer</NavLink>
+              </div>
+              <div className="services__card">
+                <img src="" alt="" />
+                <h3>CÂMERAS LPR</h3>
+                <p>Câmeras com analíticos que controlam acesso de carros.</p>
+                <NavLink>conhecer</NavLink>
+              </div>
+              <div className="services__card">
+                <img src="" alt="" />
+                <h3>CÂMERAS ANALÓGICAS</h3>
+                <p>Câmeras analógicas com gravações digitais.</p>
+                <NavLink>conhecer</NavLink>
+              </div>
+              <div className="services__card">
+                <img src="" alt="" />
+                <h3>CÂMERAS PERIMETRAIS</h3>
+                <p>Câmeras com analíticos que detectam invasores humanos e veículos.</p>
+                <NavLink>conhecer</NavLink>
+              </div>
+              <div className="services__card">
+                <img src="" alt="" />
+                <h3>CÂMERAS LPR</h3>
+                <p>Câmeras com analíticos que controlam acesso de carros.</p>
+                <NavLink>conhecer</NavLink>
+              </div>
+            </div>
           </div>
           <div className="service service-3">
             <div className="service__img__container">
@@ -58,6 +102,32 @@ export default function Services() {
             </div>
             <h2 className="services__title">Controle de Acesso</h2>
             <p className="services__text">A função principal de segurança perimetral é inibir a ação de possíveis invasores. Para isso as principal ferramentas utilizadas são a concertina e a cerca elétrica. Outras opções são os sensores de barreira ou câmeras perimetrais para identificar se a área do perímetro foi invadida. Em geral, quando percebem o sistema de segurança, possíveis infratores avaliam a situação e desistem.</p>
+            <div className="services__card__container">
+              <div className="services__card">
+                <img src="" alt="" />
+                <h3>CÂMERAS EM REDE</h3>
+                <p>Câmeras baseadas no protocolo IP para gravação de imagens.</p>
+                <NavLink>conhecer</NavLink>
+              </div>
+              <div className="services__card">
+                <img src="" alt="" />
+                <h3>CÂMERAS ANALÓGICAS</h3>
+                <p>Câmeras analógicas com gravações digitais.</p>
+                <NavLink>conhecer</NavLink>
+              </div>
+              <div className="services__card">
+                <img src="" alt="" />
+                <h3>CÂMERAS PERIMETRAIS</h3>
+                <p>Câmeras com analíticos que detectam invasores humanos e veículos.</p>
+                <NavLink>conhecer</NavLink>
+              </div>
+              <div className="services__card">
+                <img src="" alt="" />
+                <h3>CÂMERAS LPR</h3>
+                <p>Câmeras com analíticos que controlam acesso de carros.</p>
+                <NavLink>conhecer</NavLink>
+              </div>
+            </div>
           </div>
         </main>
       </div>
