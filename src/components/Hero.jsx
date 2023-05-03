@@ -75,7 +75,7 @@ export default function Hero() {
               <a href="tel:+5521984870140"className="hero__phone" >(21) 98487-0140</a>
           </div>
           <div className="hero__hours">
-            <p>Horário de atendimento: Segunda a Sexta, 9h às 18h</p>
+            <p>Segunda a sexta, 9h às 18h</p>
           </div>
         </div>
         

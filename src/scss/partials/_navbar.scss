@@ -189,7 +189,7 @@
 
   .nav__wrapper--isDisplayed {
     background-color: #22222271;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
     position: fixed;
     text-align: center;
     height: 100vh;
@@ -238,7 +238,7 @@
   .menu__btn--active,
   .menu__btn--active::before,
   .menu__btn--active::after {
-    transition: .5s;
+    transition: all .5s;
   }
   .menu__btn {
     cursor: pointer;
@@ -266,7 +266,7 @@
   .menu__btn::after {
     top: -10px;
     background-color: #FFD36D;
-    transition: opacity .5s;
+    transition: all .5s;
   }
 
   .menu__btn--active {
@@ -289,6 +289,18 @@
     right: 0;
     left: 0;
     height: 2px;
+    width: 30px;
+    transform: rotate(-90deg);
+  }
+
+  .menu__btn--active::after {
+    content: "";
+    position: absolute;
+    background-color: #FFD36D;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 0px;
     width: 30px;
     transform: rotate(-90deg);
   }

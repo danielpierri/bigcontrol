@@ -10,6 +10,7 @@ export default function Footer() {
             <li><i class="fa-solid fa-envelope"></i> <a href="mailto:evandro@bigcontrol.com.br" target="_blank" rel="noreferrer">evandro@bigcontrol.com.br</a></li>
             <li><i class="fa-solid fa-location-dot"></i> <a href="https://goo.gl/maps/GNWjRTaahop9kZx28" target="_blank" rel="noreferrer">Rua do Rosário, 141, Sobreloja 207, Centro, RJ</a></li>
           </ul>
+            <p className="footer__hours">Segunda a sexta de 9h às 18h</p>
           <ul className="footer__social-media">
             <li><a href="https://www.instagram.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram"></i></a></li>
             <li><a href="https://www.facebook.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-square-facebook"></i></a></li>

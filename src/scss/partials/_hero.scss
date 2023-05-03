@@ -27,9 +27,10 @@
 
   &__hours {
     position: absolute;
-    color: $color-white;
-    bottom: 1rem;
-    right: 0;
+    color: $color-accent-gold;
+    bottom: .5rem;
+    right: .5rem;
+    font-size: 1.25rem;
   }
   
   &__main {
@@ -327,6 +328,33 @@
       padding-left: .25rem;
       padding-top: .15rem;
       padding-bottom: .15rem;
+    }
+  }
+}
+
+/* === MOBILE FIX === */
+@media (max-height: 37.5em) {
+  .hero {
+    &__title {
+      font-size: 3.5rem;
+    }
+
+    &__description {
+      font-size: 1.25rem;
+    }
+
+    &__question {
+      font-size: 1.5rem;
+
+      &__container {
+        margin-top: 3rem;
+        max-width: 30rem;
+        height: 5rem;
+      }
+    }
+    &__cta,
+    &__cta__title {
+        font-size: 1.5rem;
     }
   }
 }
