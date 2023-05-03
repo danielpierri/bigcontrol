@@ -23,25 +23,25 @@ export default function Services() {
                 <img src="" alt="" />
                 <h3>CÂMERAS EM REDE</h3>
                 <p>Câmeras baseadas no protocolo IP para gravação de imagens.</p>
-                <NavLink>conhecer</NavLink>
+                <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
               <div className="services__card">
                 <img src="" alt="" />
                 <h3>CÂMERAS ANALÓGICAS</h3>
                 <p>Câmeras analógicas com gravações digitais.</p>
-                <NavLink>conhecer</NavLink>
+                <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
               <div className="services__card">
                 <img src="" alt="" />
                 <h3>CÂMERAS PERIMETRAIS</h3>
                 <p>Câmeras com analíticos que detectam invasores humanos e veículos.</p>
-                <NavLink>conhecer</NavLink>
+                <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
               <div className="services__card">
                 <img src="" alt="" />
                 <h3>CÂMERAS LPR</h3>
                 <p>Câmeras com analíticos que controlam acesso de carros.</p>
-                <NavLink>conhecer</NavLink>
+                <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
             </div>
           </div>
@@ -56,43 +56,43 @@ export default function Services() {
                 <img src="" alt="" />
                 <h3>CÂMERAS EM REDE</h3>
                 <p>Câmeras baseadas no protocolo IP para gravação de imagens.</p>
-                <NavLink>conhecer</NavLink>
+                <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
               <div className="services__card">
                 <img src="" alt="" />
                 <h3>CÂMERAS ANALÓGICAS</h3>
                 <p>Câmeras analógicas com gravações digitais.</p>
-                <NavLink>conhecer</NavLink>
+                <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
               <div className="services__card">
                 <img src="" alt="" />
                 <h3>CÂMERAS PERIMETRAIS</h3>
                 <p>Câmeras com analíticos que detectam invasores humanos e veículos.</p>
-                <NavLink>conhecer</NavLink>
+                <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
               <div className="services__card">
                 <img src="" alt="" />
                 <h3>CÂMERAS LPR</h3>
                 <p>Câmeras com analíticos que controlam acesso de carros.</p>
-                <NavLink>conhecer</NavLink>
+                <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
               <div className="services__card">
                 <img src="" alt="" />
                 <h3>CÂMERAS ANALÓGICAS</h3>
                 <p>Câmeras analógicas com gravações digitais.</p>
-                <NavLink>conhecer</NavLink>
+                <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
               <div className="services__card">
                 <img src="" alt="" />
                 <h3>CÂMERAS PERIMETRAIS</h3>
                 <p>Câmeras com analíticos que detectam invasores humanos e veículos.</p>
-                <NavLink>conhecer</NavLink>
+                <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
               <div className="services__card">
                 <img src="" alt="" />
                 <h3>CÂMERAS LPR</h3>
                 <p>Câmeras com analíticos que controlam acesso de carros.</p>
-                <NavLink>conhecer</NavLink>
+                <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
             </div>
           </div>
@@ -107,25 +107,25 @@ export default function Services() {
                 <img src="" alt="" />
                 <h3>CÂMERAS EM REDE</h3>
                 <p>Câmeras baseadas no protocolo IP para gravação de imagens.</p>
-                <NavLink>conhecer</NavLink>
+                <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
               <div className="services__card">
                 <img src="" alt="" />
                 <h3>CÂMERAS ANALÓGICAS</h3>
                 <p>Câmeras analógicas com gravações digitais.</p>
-                <NavLink>conhecer</NavLink>
+                <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
               <div className="services__card">
                 <img src="" alt="" />
                 <h3>CÂMERAS PERIMETRAIS</h3>
                 <p>Câmeras com analíticos que detectam invasores humanos e veículos.</p>
-                <NavLink>conhecer</NavLink>
+                <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
               <div className="services__card">
                 <img src="" alt="" />
                 <h3>CÂMERAS LPR</h3>
                 <p>Câmeras com analíticos que controlam acesso de carros.</p>
-                <NavLink>conhecer</NavLink>
+                <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
             </div>
           </div>
