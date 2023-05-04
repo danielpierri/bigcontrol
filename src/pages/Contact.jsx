@@ -8,7 +8,6 @@ export default function Contact() {
     <div>
       <Navbar />
       <h1>This is the about page</h1>
-      <Main />
       <Footer />
     </div>
   )

@@ -5,6 +5,7 @@ import cftvServicos from "../img/cftv-servicos.jpg"
 import cercaEletricaServicos from "../img/cerca-eletrica-servicos.jpg"
 import controleDeAcessoServicos from "../img/controle-de-acesso-servicos.jpg"
 import { NavLink } from "react-router-dom"
+import wpplogo from "../img/whatsapp-128.png"
 
 export default function Services() {
   return (
@@ -54,43 +55,43 @@ export default function Services() {
             <div className="services__card__container">
               <div className="services__card">
                 <img src="" alt="" />
-                <h3>CÂMERAS EM REDE</h3>
+                <h3>CERCA ELÉTRICA</h3>
                 <p>Câmeras baseadas no protocolo IP para gravação de imagens.</p>
                 <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
               <div className="services__card">
                 <img src="" alt="" />
-                <h3>CÂMERAS ANALÓGICAS</h3>
+                <h3>CÂMERA PERIMETRAL</h3>
                 <p>Câmeras analógicas com gravações digitais.</p>
                 <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
               <div className="services__card">
                 <img src="" alt="" />
-                <h3>CÂMERAS PERIMETRAIS</h3>
-                <p>Câmeras com analíticos que detectam invasores humanos e veículos.</p>
-                <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
-              </div>
-              <div className="services__card">
-                <img src="" alt="" />
-                <h3>CÂMERAS LPR</h3>
+                <h3>SENSOR INFRAVERMELHO DE BARREIRA</h3>
                 <p>Câmeras com analíticos que controlam acesso de carros.</p>
                 <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
               <div className="services__card">
                 <img src="" alt="" />
-                <h3>CÂMERAS ANALÓGICAS</h3>
+                <h3>FIBRA ÓTICA DE BARREIRA</h3>
                 <p>Câmeras analógicas com gravações digitais.</p>
                 <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
               <div className="services__card">
                 <img src="" alt="" />
-                <h3>CÂMERAS PERIMETRAIS</h3>
+                <h3>CONCERTINA</h3>
                 <p>Câmeras com analíticos que detectam invasores humanos e veículos.</p>
                 <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
               <div className="services__card">
                 <img src="" alt="" />
-                <h3>CÂMERAS LPR</h3>
+                <h3>LANÇA CORTANTE</h3>
+                <p>Câmeras com analíticos que controlam acesso de carros.</p>
+                <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
+              </div>
+              <div className="services__card">
+                <img src="" alt="" />
+                <h3>REDE LAMINADA</h3>
                 <p>Câmeras com analíticos que controlam acesso de carros.</p>
                 <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
@@ -105,26 +106,20 @@ export default function Services() {
             <div className="services__card__container">
               <div className="services__card">
                 <img src="" alt="" />
-                <h3>CÂMERAS EM REDE</h3>
+                <h3>CANCELAS</h3>
                 <p>Câmeras baseadas no protocolo IP para gravação de imagens.</p>
                 <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
               <div className="services__card">
                 <img src="" alt="" />
-                <h3>CÂMERAS ANALÓGICAS</h3>
+                <h3>RECONHECIMENTO FACIAL E BIOMÉTRICO</h3>
                 <p>Câmeras analógicas com gravações digitais.</p>
                 <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
               <div className="services__card">
                 <img src="" alt="" />
-                <h3>CÂMERAS PERIMETRAIS</h3>
+                <h3>CATRACAS</h3>
                 <p>Câmeras com analíticos que detectam invasores humanos e veículos.</p>
-                <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
-              </div>
-              <div className="services__card">
-                <img src="" alt="" />
-                <h3>CÂMERAS LPR</h3>
-                <p>Câmeras com analíticos que controlam acesso de carros.</p>
                 <NavLink to={""} className={"services__card__link"}>conhecer</NavLink>
               </div>
             </div>
@@ -132,6 +127,10 @@ export default function Services() {
         </main>
       </div>
       <Footer />
+      <div className="hero__contact__container">
+        <a href="https://wa.me/5521984870140?" target="_blank" rel="noreferrer"><img src={wpplogo} alt="WhatsApp logo" /></a>
+        <a href="tel:+5521984870140" className="hero__phone" >(21) 98487-0140</a>
+      </div>
     </div>
   )
 }

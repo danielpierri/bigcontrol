@@ -1,1 +1,129 @@
 @import "../variables/variables";
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(#222, #8f762a85, #111);
+}
+
+.projects * {
+  // outline: 1px solid red;
+}
+
+.project {
+  &__container {
+    max-width: 900px;
+    margin-inline: auto;
+    padding-top: 6rem;
+    padding-bottom: 12rem;
+  }
+
+  &__container > * {
+    margin-top: 2.5rem;
+  }
+
+  &__title,
+  &__text {
+    text-align: center;
+    max-width: 750px;
+    margin-inline: auto;
+  }
+
+  &__title {
+    filter: drop-shadow(2px 2px 5px #000);
+    color: $color-light-gold;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4.25rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    line-height: 1.4;
+    margin-block: 1.5rem;
+  }
+
+  &__text {
+    color: $color-white;
+    text-align: left;
+    font-family: "Nunito", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 1.3px;
+    margin-bottom: 2.5rem;
+  }
+
+  &__img__container {
+    position: relative;
+    height: auto;
+    max-width: 750px;
+    margin-inline: auto;
+    box-shadow: 0px 0px 10px 3px #000000ce;
+  }
+  
+  &__img {
+    object-fit: contain;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  &__btn {
+    text-decoration: none;
+    font-size: 2rem;
+    padding-inline: 1px;
+    padding-block: 5px;
+    position: relative;
+    color: $color-white;
+    letter-spacing: 1.6px;
+    font-weight: 500;
+    z-index: 100;
+    transition: color .25s;
+  }
+
+  &__btn::after {
+    content: "";
+    position: absolute;
+    background-color: $color-light-gold;
+    border-radius: 5px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    z-index: -1;
+    animation-name: button-hover-out;
+    animation-duration: .25s;
+    transition: background .25s;
+  }
+
+  &__btn:hover::after {
+    background-color: $color-light-gold;
+    animation-name: button-hover;
+    animation-duration: .25s;
+    animation-fill-mode: both;
+  }
+  &__btn:hover,
+  &__btn:focus {
+    color: $color-black;
+  }
+
+  @keyframes button-hover {
+    from {
+      height: 2px;
+    }
+
+    to {
+      height: 100%;
+      --anim-hover-out: hover-out;
+    }
+  }
+
+  @keyframes button-hover-out {
+    from {
+      height: 100%;
+    }
+
+    to {
+      height: 2px;
+    }
+  }
+}
