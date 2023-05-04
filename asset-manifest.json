@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bigcontrol/static/css/main.e72e40e0.css",
-    "main.js": "/bigcontrol/static/js/main.81238a1c.js",
+    "main.css": "/bigcontrol/static/css/main.503603b9.css",
+    "main.js": "/bigcontrol/static/js/main.6a91c9c6.js",
     "static/media/projetos-home.jpg": "/bigcontrol/static/media/projetos-home.bbef677ddb03b7d6e90c.jpg",
     "static/media/cftv-servicos.jpg": "/bigcontrol/static/media/cftv-servicos.2df4db90d74baf5a292f.jpg",
     "static/media/manutencao-home.jpg": "/bigcontrol/static/media/manutencao-home.ddc299adcd456fb5516e.jpg",
@@ -14,11 +14,11 @@
     "static/media/controle-de-acesso-home.jpg": "/bigcontrol/static/media/controle-de-acesso-home.6178db6325b90dc8b71b.jpg",
     "static/media/big-control-home.png": "/bigcontrol/static/media/big-control-home.02134c785b8edac50234.png",
     "index.html": "/bigcontrol/index.html",
-    "main.e72e40e0.css.map": "/bigcontrol/static/css/main.e72e40e0.css.map",
-    "main.81238a1c.js.map": "/bigcontrol/static/js/main.81238a1c.js.map"
+    "main.503603b9.css.map": "/bigcontrol/static/css/main.503603b9.css.map",
+    "main.6a91c9c6.js.map": "/bigcontrol/static/js/main.6a91c9c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.e72e40e0.css",
-    "static/js/main.81238a1c.js"
+    "static/css/main.503603b9.css",
+    "static/js/main.6a91c9c6.js"
   ]
 }
