@@ -25,6 +25,7 @@
   border-radius: 10px;
   padding: 0 1rem 1.5rem;
   transition: border .25s;
+  margin-bottom: 2.5rem;
 
   &:hover,
   &:focus,
@@ -39,7 +40,7 @@
     color: #FFF;
     font-size: 2rem;
     margin-bottom: .25rem;
-    padding-inline: 2px;
+    padding-inline: 6px;
     letter-spacing: 1px;
     transition: color .25s;
   }
@@ -51,11 +52,29 @@
     padding: .5rem 1rem;
     width: 100%;
   }
+
+  & > input:active {
+    
+  }
+
+  & > textarea {
+    background-color: #CCC;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    padding: .5rem 1rem;
+    height: 300px;
+    width: 500px;
+    resize: none;
+  }
+
+  & > input,
+  & > textarea {
+    border-radius: 5px;
+  }
 }
 
 .input-name {
   padding: 0 1rem 1.5rem;
-  margin-bottom: 2rem;
 
   & > legend {
   }
