@@ -1,17 +1,32 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { NavLink } from "react-router-dom"
 import logo from "../img/big-control-home.png"
 
 export default function Navbar() {
   const [menu, setMenu] = useState(false)
+  const [navBg, setNavBg] = useState(false)
 
   const menuAction = (e) => {
     e.preventDefault()
     setMenu(prevMenu => !prevMenu)
   }
 
+  const changeBackground = () => {
+    if (window.scrollY >= 50) {
+      setNavBg(true)
+    } else {
+      setNavBg(false)
+    }
+  }
+
+  useEffect(() => {
+    changeBackground()
+    // adding the event when scroll change background
+    window.addEventListener("scroll", changeBackground)
+  })
+
   return (
-    <div className="nav__container">
+    <div className={ navBg ?"nav__container--scrolled" : "nav__container"}>
       <nav className="nav">
         <div>
           <img src={logo} alt="Big Control logo" />

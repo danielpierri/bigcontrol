@@ -166,6 +166,9 @@
 }
 
 @media (max-width: 55em) {
-  .service {
+  .services {
+    &__container {
+      padding-top: 10rem;
+    }
   }
 }

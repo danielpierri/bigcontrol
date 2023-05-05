@@ -150,14 +150,21 @@
     z-index: 1000;
     /* border: 1px solid red; */
 
-    // &__container {
-    //   border: 1px solid red;
-    //   position: fixed;
-    //   top: 0;
-    //   left: 0;
-    //   right: 0;
-    //   z-index: 1000;
-    // }
+    &__container,
+    &__container--scrolled {
+      // border: 1px solid red;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      transition: background .25s;
+    }
+
+    &__container--scrolled {
+      background-color: #22222271;
+      backdrop-filter: blur(15px);
+    }
   }
 
   .nav > div {
