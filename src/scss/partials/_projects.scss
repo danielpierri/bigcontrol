@@ -14,12 +14,12 @@
   &__container {
     max-width: 900px;
     margin-inline: auto;
-    padding-top: 6rem;
-    padding-bottom: 12rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
   }
 
   &__container > * {
-    margin-top: 2.5rem;
+    margin-top: 1rem;
   }
 
   &__title,
@@ -49,7 +49,8 @@
     font-weight: 300;
     line-height: 1.6;
     letter-spacing: 1.3px;
-    margin-bottom: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
   }
 
   &__img__container {
@@ -69,8 +70,9 @@
   &__btn {
     text-decoration: none;
     font-size: 2rem;
+    margin-top: 2rem;
     padding-inline: 1px;
-    padding-block: 5px;
+    padding-block: 6px;
     position: relative;
     color: $color-white;
     letter-spacing: 1.6px;
@@ -128,8 +130,43 @@
   }
 }
 
+@media (min-width: 55em) {
+  .projects {
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 55em) {
   .projects {
     padding-top: 10rem;
+  }
+
+  .project {
+    &__img__container {
+      
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      padding-inline: 2rem;
+    }
+
+    &__title {
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    &__text {
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 1.4;
+    }
+
+    &__btn {
+      font-size: 1.5rem;
+      width: fit-content;
+      align-self: center;
+    }
   }
 }

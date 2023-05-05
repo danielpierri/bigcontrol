@@ -88,7 +88,7 @@
 
   &__btn {
     padding-inline: 1px;
-    padding-block: 5px;
+    padding-block: 6px;
     position: relative;
     color: $color-white;
     letter-spacing: 1.6px;
@@ -359,6 +359,7 @@
       align-self: center;
       font-size: 2rem;
       letter-spacing: 2px;
+      line-height: 1.4;
       margin-top: .5rem;
       margin-bottom: 0rem;
     }
