@@ -26,7 +26,7 @@ export default function Navbar() {
   })
 
   return (
-    <div className={ navBg ?"nav__container--scrolled" : "nav__container"}>
+    <div className={ navBg ? "nav__container--scrolled" : "nav__container"}>
       <nav className="nav">
         <div>
           <img src={logo} alt="Big Control logo" />
