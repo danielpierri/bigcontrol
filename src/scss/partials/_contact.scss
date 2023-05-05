@@ -102,6 +102,32 @@
 
 @media (max-width: 55em) {
   .contact__viewport {
+    padding-top: 50%;
     height: 100svh;
+  }
+
+  .contact {
+  }
+
+  .fieldset {
+    & > legend {
+      font-size: 1.25rem;
+      letter-spacing: 1px;
+    }
+
+    & > input {
+      font-size: 1.75rem;
+      letter-spacing: 1px;
+    }
+
+    & > textarea {
+      background-color: #CCC;
+      font-size: 1.75rem;
+      letter-spacing: .5px;
+      padding: .5rem 1rem;
+      height: 200px;
+      max-width: 350px;
+      resize: none;
+    }
   }
 }
