@@ -45,6 +45,8 @@ export default function Contact() {
               ></textarea>
             </fieldset>
 
+            <button className="form__btn">Enviar</button>
+
           </form>
         </div>
       </div>

@@ -1,3 +1,5 @@
+@import "../variables/variables";
+
 .contact__viewport {
   display: flex;
   flex-direction: column;
@@ -23,15 +25,21 @@
   background-color: transparent;
   border: 1px solid #FFF;
   border-radius: 10px;
-  padding: 0 1rem 1.5rem;
+  padding-top: 0;
+  padding-inline: 1rem;
+  padding-bottom: 1rem;
   transition: border .25s;
   margin-bottom: 2.5rem;
+  position: relative;
 
+  &:active,
   &:hover,
   &:focus,
+  &:focus-within,
+  &:active > legend,
   &:hover > legend,
-  &:focus > legend
-   {
+  &:focus > legend,
+  &:focus-within > legend {
     border-color: $color-accent-gold;
     color: $color-accent-gold;
   }
@@ -45,23 +53,29 @@
     transition: color .25s;
   }
 
-  & > input {
+  & > input,
+  & > textarea {
     background-color: #CCC;
+    color: #000;
     font-size: 2.5rem;
     letter-spacing: 1px;
     padding: .5rem 1rem;
     width: 100%;
   }
 
-  & > input:active {
-    
+  & > input::placeholder,
+  & > textarea::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  & > input:focus,
+  & > textarea:focus {
+    outline: transparent;
   }
 
   & > textarea {
-    background-color: #CCC;
     font-size: 2.5rem;
     letter-spacing: 1px;
-    padding: .5rem 1rem;
     height: 300px;
     width: 500px;
     resize: none;
@@ -74,7 +88,7 @@
 }
 
 .input-name {
-  padding: 0 1rem 1.5rem;
+
 
   & > legend {
   }
@@ -90,7 +104,6 @@
 .input-message {
   
   & > textarea {
-    background-color: #CCC;
     font-size: 2.5rem;
     letter-spacing: 1px;
     padding: .5rem 1rem;
@@ -121,10 +134,8 @@
     }
 
     & > textarea {
-      background-color: #CCC;
       font-size: 1.75rem;
       letter-spacing: .5px;
-      padding: .5rem 1rem;
       height: 200px;
       max-width: 350px;
       resize: none;
