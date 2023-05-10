@@ -16,13 +16,6 @@
   font-size: 2rem;
   display: flex;
   justify-content: center;
-
-  &__form__container {
-
-    & * {
-      // outline: 1px solid red;
-    }
-  }
 }
 
 /* === FORM STYLE === */
@@ -150,11 +143,9 @@
   .contact__viewport {
     padding-top: 10rem;
     height: 100svh;
-    border: 1px solid red;
   }
   
   .contact {
-    border: 1px solid red;
     margin-bottom: 1rem;
   }
 
