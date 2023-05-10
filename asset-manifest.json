@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bigcontrol/static/css/main.2862bd95.css",
-    "main.js": "/bigcontrol/static/js/main.731e234b.js",
+    "main.js": "/bigcontrol/static/js/main.059dc571.js",
     "static/media/contact-bg.jpg": "/bigcontrol/static/media/contact-bg.764071db05773c0184fe.jpg",
     "static/media/projetos-home.jpg": "/bigcontrol/static/media/projetos-home.bbef677ddb03b7d6e90c.jpg",
     "static/media/cftv-servicos.jpg": "/bigcontrol/static/media/cftv-servicos.2df4db90d74baf5a292f.jpg",
@@ -16,10 +16,10 @@
     "static/media/big-control-home.png": "/bigcontrol/static/media/big-control-home.02134c785b8edac50234.png",
     "index.html": "/bigcontrol/index.html",
     "main.2862bd95.css.map": "/bigcontrol/static/css/main.2862bd95.css.map",
-    "main.731e234b.js.map": "/bigcontrol/static/js/main.731e234b.js.map"
+    "main.059dc571.js.map": "/bigcontrol/static/js/main.059dc571.js.map"
   },
   "entrypoints": [
     "static/css/main.2862bd95.css",
-    "static/js/main.731e234b.js"
+    "static/js/main.059dc571.js"
   ]
 }
