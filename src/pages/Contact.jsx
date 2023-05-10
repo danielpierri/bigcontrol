@@ -21,7 +21,7 @@ export default function Contact() {
       message: message
     }
 
-    emailjs.send("service_u2188rl","template_ewgztq5", templateParams, "YVVgn5xjlbMucXKuP")
+    emailjs.send("service_u2188rl", "template_ewgztq5", templateParams, "YVVgn5xjlbMucXKuP")
       .then(
         (response) => {
           console.log("Email enviado", response.status, response.text)
@@ -44,7 +44,7 @@ export default function Contact() {
           <form className="form" onSubmit={sendEmail}>
 
             <fieldset className="fieldset input-name">
-              <legend>Nome</legend>
+              <legend>Seu nome</legend>
               <label for="name"></label>
               <input
                 type="text"
@@ -57,7 +57,7 @@ export default function Contact() {
             </fieldset>
 
             <fieldset className="fieldset input-email">
-              <legend>Email</legend>
+              <legend>Seu email</legend>
               <label for="email"></label>
               <input
                 type="email"
@@ -76,18 +76,22 @@ export default function Contact() {
                 type="text"
                 id="message"
                 name="message"
-                placeholder="Escreva sua mensagem..."
+                placeholder="Escreva sua dúvida..."
                 onChange={(e) => setMessage(e.target.value)}
                 value={message}
               ></textarea>
             </fieldset>
 
-            <input className="form__btn" type="submit" value="Enviar"/>
+            <input className="form__btn" type="submit" value="ENVIAR" />
 
           </form>
         </div>
       </div>
-      <Footer />
+      <Footer style={{
+        backgroundColor:
+          "#22222271",
+        backdropFilter: "blur(20px)"
+      }} />
     </div>
   );
 }

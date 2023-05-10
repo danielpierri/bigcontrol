@@ -1,8 +1,9 @@
 import React from "react"
 
-export default function Footer() {
+export default function Footer({ style }) {
+
   return (
-    <div className="footer__container">
+    <div className={"footer__container"} style={style}>
       <footer className="footer">
         <div>
           <ul className="footer__contact">
