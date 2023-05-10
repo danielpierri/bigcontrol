@@ -13,6 +13,7 @@
 }
 
 .contact {
+  margin-bottom: 2rem;
   font-size: 2rem;
   display: flex;
   justify-content: center;
@@ -26,7 +27,7 @@
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     color: $color-light-gold;
-    margin-bottom: .25rem;
+    margin-bottom: 0rem;
     padding-left: .25rem;
     letter-spacing: 2px;
   }
@@ -45,14 +46,14 @@
   }
   
   & > input {
-    font-size: 2rem;
+    font-size: 1.75rem;
     border-top: none;
     border-inline: none;
     border-bottom: 2px solid #EEE;
     border-radius: 0;
     letter-spacing: 2px;
     padding: .75rem .25rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1.5rem;
     width: 100%;
   }
 
@@ -64,11 +65,11 @@
   & > textarea {
     border: 2px solid #EEE;
     border-radius: 5px;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     letter-spacing: 1.5px;
     padding: .5rem 1rem;
-    height: 150px;
-    width: 500px;
+    height: 125px;
+    width: 450px;
     resize: none;
     transition: background .15s;
   }
@@ -110,11 +111,11 @@
   font-weight: 700;
   letter-spacing: 1.25px;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   background-color: $color-light-gold;
   border: none;
   border-radius: 5px;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1rem 5rem;
   width: 100%;
   transition: 
@@ -127,7 +128,7 @@
   &:focus {
     background-color: $color-accent-gold;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     letter-spacing: 1.5px;
     box-shadow: 0 0 5px #D6B34B;
     transform: scale(1.01);

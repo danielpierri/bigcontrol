@@ -90,7 +90,7 @@ export default function Contact() {
       <Footer style={{
         backgroundColor:
           "#22222271",
-        backdropFilter: "blur(20px)"
+        backdropFilter: "blur(10px)"
       }} />
     </div>
   );
