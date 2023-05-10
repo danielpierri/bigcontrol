@@ -83,7 +83,7 @@
   &__social-media a {
     text-decoration: none;
     color: $color-light-gold;
-    margin-right: 1.5rem;
+    padding-inline: 1rem;
     transition: color .2s;
   }
   
@@ -126,6 +126,10 @@
 @media (max-width: 55em) {
   .footer {
 
+    &__contact {
+      margin-left: 1rem;
+    }
+
     &__contact li:first-child {
       margin-top: .5rem;
     }
@@ -133,10 +137,11 @@
     &__hours {
       font-size: 1rem;
       line-height: 1;
-      margin-left: 1rem;
     }
 
-    &__social-media li i {
+    &__social-media a {
+      padding-inline: .5rem;
+      transition: color .2s;
       font-size: 2rem;
     }
 
