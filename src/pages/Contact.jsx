@@ -21,7 +21,7 @@ export default function Contact() {
       message: message
     }
 
-    emailjs.send("service_u2188rl", "template_ewgztq5", templateParams, "YVVgn5xjlbMucXKuP")
+    emailjs.send("service_btjn2nn", "template_ewgztq5", templateParams, "YVVgn5xjlbMucXKuP")
       .then(
         (response) => {
           console.log("Email enviado", response.status, response.text)
