@@ -1,0 +1,63 @@
+.hero__contact__container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  text-align: end;
+  right: 0;
+  bottom: 25px;
+  z-index: 1;
+  & img {
+    background-color: $color-black;
+    border-radius: 10px 0 0 10px;
+    padding: .5rem;
+    height: 50px;
+    margin-bottom: .75rem;
+    transition: transform .1s;
+  }
+  
+  & img:hover,
+  & .hero__phone:hover {
+    box-shadow: 0 0 10px #ffd36d;
+    transform: scale(1.025);
+  }
+  
+  & img:active, 
+  & .hero__phone:active {
+    transform: scale(1);
+  }
+  
+  & .hero__phone {
+    // border: 1px solid red;
+    color: $color-white;
+    background-color: $color-black;
+    text-decoration: none;
+    border-radius: 10px 0 0 10px;
+    font-size: 2rem;
+    padding-right: .5rem;
+    padding-left: .25rem;
+    padding-top: .15rem;
+    padding-bottom: .15rem;
+    transition: transform .1s;
+  }
+}
+
+@media (max-width: 55em) {
+  .hero__contact__container {
+    bottom: 40px;
+
+    & img {
+      padding: .5rem;
+      height: 30px;
+      margin-bottom: .25rem;
+    }
+    
+    & .hero__phone {
+      font-size: 1rem;
+      padding-right: .5rem;
+      padding-left: .25rem;
+      padding-top: .15rem;
+      padding-bottom: .15rem;
+    }
+  }
+
+}

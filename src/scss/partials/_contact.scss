@@ -26,6 +26,7 @@
   & > legend {
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
+    font-weight: 300;
     color: $color-light-gold;
     margin-bottom: 0rem;
     padding-left: .25rem;
@@ -47,6 +48,7 @@
   
   & > input {
     font-size: 1.75rem;
+    font-weight: 300;
     border-top: none;
     border-inline: none;
     border-bottom: 2px solid #EEE;
@@ -66,6 +68,7 @@
     border: 2px solid #EEE;
     border-radius: 5px;
     font-size: 1.5rem;
+    font-weight: 300;
     letter-spacing: 1.5px;
     padding: .5rem 1rem;
     height: 125px;

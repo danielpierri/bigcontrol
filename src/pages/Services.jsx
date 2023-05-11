@@ -1,11 +1,11 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Phone from "../components/Phone";
 import cftvServicos from "../img/cftv-servicos.jpg";
 import cercaEletricaServicos from "../img/cerca-eletrica-servicos.jpg";
 import controleDeAcessoServicos from "../img/controle-de-acesso-servicos.jpg";
 import { NavLink } from "react-router-dom";
-import wpplogo from "../img/whatsapp-128.png";
 
 export default function Services() {
   return (
@@ -199,14 +199,7 @@ export default function Services() {
         </main>
       </div>
       <Footer />
-      <div className="hero__contact__container">
-        <a href="https://wa.me/5521984870140?" target="_blank" rel="noreferrer">
-          <img src={wpplogo} alt="WhatsApp logo" />
-        </a>
-        <a href="tel:+5521984870140" className="hero__phone">
-          (21) 98487-0140
-        </a>
-      </div>
+      <Phone />
     </div>
   );
 }
